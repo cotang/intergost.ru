@@ -1,0 +1,76 @@
+.glossary{
+  margin-bottom: 50px;
+
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family;
+    margin: 0 0 40px;
+    font-size: $font-size-title;
+    font-weight: $bold;
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: $font-family;
+    justify-content: space-between;
+    font-weight: $bold;
+    font-size: $font-size-list;
+    @include mq($from:xs, $until:md){
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+  &__item{
+    padding: 0 5px;
+  }
+  &__link{
+    display: inline-block;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+    &--active{
+      transform: scale(1.6);
+      color: $blue;
+    }
+  }
+}
+
+.glossary-articles{
+
+  &__list{
+    padding-left: 0;
+    margin: 20px 0 30px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    flex: 0 0 15%;
+    max-width: 15%;
+    min-height: 45px;
+    @include mq($from:md, $until:lg){
+      flex: 0 0 22%;
+      max-width: 22%;
+    }
+    @include mq($from:sm, $until:md){
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include mq($from:xs, $until:sm){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &__link{
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}

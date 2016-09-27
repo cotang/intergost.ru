@@ -1,0 +1,140 @@
+/*
+  Project variables
+  =================
+*/
+
+
+/*
+  Flex Sass grid generator variables
+  ==================================
+
+  [flex-sass-grid-generator](https://github.com/Enkil/flex-sass-grid-generator)
+
+*/
+
+$base-font-size:              16px;
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+
+$screen-xs:                   0; // Extra small screen / phone
+$screen-sm:                   480px; // Small screen / phone
+$screen-md:                   760px; // Medium screen / tablet
+$screen-lg:                   980px; // Large screen / desktop
+$screen-xl:                   1280px; // Extra large screen / wide desktop
+//$screen-xxl:                  1890px; // Super large screen / extra wide desktop
+
+$container-max-widths: (
+        sm:                   480px,
+        md:                   760px,
+        lg:                   980px,
+        xl:                   1280px
+) !default;
+
+
+$grid-breakpoints: (
+        xs:                   0,
+        sm:                   540px,
+        md:                   768px,
+        lg:                   1024px,
+        xl:                   1280px
+) !default;
+
+/*
+  Sass MQ variables
+  =================
+
+  [sass-mq](https://github.com/sass-mq/sass-mq)
+*/
+
+$mq-breakpoints: (
+        xs:                   0px,
+        sm:                   540px,
+        md:                   768px,
+        lg:                   1024px,
+        xl:                   1280px
+) !default;
+
+
+
+//------------------------------------------------------------------------------
+//  Colors
+//------------------------------------------------------------------------------
+
+
+// Color table 
+
+$white:                       #ffffff;
+$black:                       #000000;
+
+$blue:                        #366ba6;
+$blue--form:                  #3166a1;
+
+$orange:                      #ff7926;
+
+$pale:                        #f2f2f2;
+$grey:                        #e6e6e6;
+$grey-darker:                 #737373;
+
+
+// $light-grey:                  #dddddd;
+// $border-grey:                 #bebebe;
+
+$success:                     #5cb85c;
+$error:                       #d9534f;
+
+// Colors in use
+
+$body-bg:                     $white;
+$text-color:                  $black;
+
+$link-color:                  $text-color;
+$link-color--hover:           $blue;
+
+$text-color-grey:             $grey-darker;
+$text-color-white:            $white;
+$link-color-white:            $text-color-white;
+$link-color-white--hover:     darken($link-color-white, 20%);
+
+
+
+//------------------------------------------------------------------------------
+//  Typography
+//------------------------------------------------------------------------------
+
+$font-family:                   Raleway, Roboto, Helvetica, Arial, sans-serif;
+$font-family--roboto:           Roboto, Helvetica, Arial, sans-serif;
+$font-family--italic:           'Open Sans Italic', 'Roboto Italic', Helvetica, Arial, sans-serif;
+$font-family--lato:             'Lato Black Italic', 'Roboto Italic', Helvetica, Arial, sans-serif;
+//$font-family--serif:          Georgia, "Times New Roman", Times, serif;
+//$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
+
+
+$font-size:                   15px;
+$font-size-menu:              14px;
+$font-size-btn:               14px;
+
+$font-size-bigger:            16px;
+
+$font-size-small:             12px;
+$font-size-smallest:          10px;
+
+$font-size-figures:           40px;
+$font-size-figures-big:       60px;
+
+$font-size-list:              18px;
+$font-size-promo:             20px;
+
+$font-size-title:             24px;
+$font-size-supertitle:        30px;
+$font-size-footer-menu:       15px;
+
+
+
+$line-height:                 1.71;
+
+$light:                       200;
+$regular:                     400;
+$semibold:                    600;
+$bold:                        700;
+
+

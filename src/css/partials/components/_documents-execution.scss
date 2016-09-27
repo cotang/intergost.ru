@@ -1,0 +1,162 @@
+.documents-execution{
+  background-image: url(../img/bg1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-bottom: 120px;
+  @include mq($from:xs, $until:lg){
+    margin-bottom: 60px;
+  }
+
+  &__inner{
+    display: flex; 
+    flex-wrap: wrap;   
+  }  
+  &__specialist{
+    flex: 0 0 50%;
+    max-width: 50%;
+    background-color: $white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
+    margin-top: -40px;
+    margin-bottom: -40px;
+    padding: 40px 60px;
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @include mq($from:xs, $until:sm){
+      padding: 40px 20px;
+    }
+  }
+  &__title{
+    margin: 60px 0 40px;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: $font-size-title;
+    position: relative;
+    font-weight: $bold;
+    line-height: 1.3;
+    &:before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transform: translateY(-100%);
+      @include sprite($s-talks);
+    }
+  }
+}
+
+.manager{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__info{
+    margin-left: 60px;
+    color: $text-color;
+    @include mq($from:lg, $until:xl){
+      margin-left: 0;
+    }
+    @include mq($from:xs, $until:md){
+      margin-left: 0;
+    }
+  }
+  &__name{
+    margin: 20px 0;
+    text-align: center;
+    font-size: $font-size-promo;  
+    font-weight: $bold;
+  }
+  &__link{
+    font-size: $font-size-list;
+    display: block;
+    margin-bottom: 20px;
+    color: $text-color;
+    &--tel{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 15px;
+        @include sprite($s-manager-tel);
+      }
+    }
+    &--skype{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 15px;
+        @include sprite($s-manager-skype);
+      }
+    }
+    &--icq{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 15px;
+        @include sprite($s-manager-icq);
+      }
+    }
+  }
+  .btn{
+    margin-top: 30px;
+  }
+}
+
+
+.self-execution{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 90px 110px 0;
+  @include mq($from:xs, $until:lg){
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+  @include mq($from:xs, $until:md){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  &__title{
+    margin: 50px 0 60px;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: $font-size-title;
+    position: relative;
+    font-weight: $bold;
+    color: $text-color-white;  
+    line-height: 1.3;
+    &:before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transform: translateY(-100%);
+      @include sprite($s-docs);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateX(100%);
+      @include sprite($s-arrow);
+    }
+  }
+}

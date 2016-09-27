@@ -1,0 +1,28 @@
+include ../abstracts/mixins/_news-item.pug
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.news-section.container
+  +e.H2.title Мы следим за ситуацией на рынке
+  +e.inner
+    +b.news-general
+      +e.img
+        img(src="img/news/news1.jpg", alt="news1", title="news2")
+      +e.wrapper
+        +e.H3.title Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
+        +e.date 11 июня, 2015
+        +e.text О взаимодействии всех органов, которые осуществляют надзор за соблюдением СФС-мер в рамках ЕАЭС, шла речь на профильном совещании 14 апреля. В нем приняли участие представители от сран-участниц ЕАЭС, эксперты и другие ....
+    +e.wrapper
+      +newsItem("Оборот табачных изделий будет регулироваться новым стандартом", "11 июня, 2015", "news2.jpg", "news2")
+      +newsItem("Мясо и молоко теперь имеют свой собственный технический регламент Таможенного Союза", "11 июня, 2015", "news3.jpg", "news3")
+      +newsItem("Стартовало общественное обсуждение изменений в перечне стандартов к ТР ТС 'О безопасности колесных транспортных средств'", "11 июня, 2015", "news4.jpg", "news4")
+      +e.all-news
+        a(href="page-news.html") Читать все новости
+      // Subscribe section
+      +e.SECTION.subscribe-section
+        +b.FORM.form--subscribe(action="", method="", id= "subscribe")
+          .form-group.field-email.required
+            +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
+            p.help-block.help-block-error Ошибка заполнения поля
+          .form-group
+            +b.BUTTON.btn--pale(type="submit") Будьте в курсе
+

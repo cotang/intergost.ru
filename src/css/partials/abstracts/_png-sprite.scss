@@ -1,0 +1,426 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$s-approach-block-free-name: 's-approach-block-free';
+$s-approach-block-free-x: 68px;
+$s-approach-block-free-y: 156px;
+$s-approach-block-free-offset-x: -68px;
+$s-approach-block-free-offset-y: -156px;
+$s-approach-block-free-width: 55px;
+$s-approach-block-free-height: 17px;
+$s-approach-block-free-total-width: 246px;
+$s-approach-block-free-total-height: 215px;
+$s-approach-block-free-image: '../img/png-sprite.png';
+$s-approach-block-free: (68px, 156px, -68px, -156px, 55px, 17px, 246px, 215px, '../img/png-sprite.png', 's-approach-block-free', );
+$s-approach-block-mail-name: 's-approach-block-mail';
+$s-approach-block-mail-x: 183px;
+$s-approach-block-mail-y: 0px;
+$s-approach-block-mail-offset-x: -183px;
+$s-approach-block-mail-offset-y: 0px;
+$s-approach-block-mail-width: 36px;
+$s-approach-block-mail-height: 37px;
+$s-approach-block-mail-total-width: 246px;
+$s-approach-block-mail-total-height: 215px;
+$s-approach-block-mail-image: '../img/png-sprite.png';
+$s-approach-block-mail: (183px, 0px, -183px, 0px, 36px, 37px, 246px, 215px, '../img/png-sprite.png', 's-approach-block-mail', );
+$s-approach-block-manager-name: 's-approach-block-manager';
+$s-approach-block-manager-x: 136px;
+$s-approach-block-manager-y: 0px;
+$s-approach-block-manager-offset-x: -136px;
+$s-approach-block-manager-offset-y: 0px;
+$s-approach-block-manager-width: 45px;
+$s-approach-block-manager-height: 35px;
+$s-approach-block-manager-total-width: 246px;
+$s-approach-block-manager-total-height: 215px;
+$s-approach-block-manager-image: '../img/png-sprite.png';
+$s-approach-block-manager: (136px, 0px, -136px, 0px, 45px, 35px, 246px, 215px, '../img/png-sprite.png', 's-approach-block-manager', );
+$s-approach-block-world-name: 's-approach-block-world';
+$s-approach-block-world-x: 136px;
+$s-approach-block-world-y: 37px;
+$s-approach-block-world-offset-x: -136px;
+$s-approach-block-world-offset-y: -37px;
+$s-approach-block-world-width: 39px;
+$s-approach-block-world-height: 39px;
+$s-approach-block-world-total-width: 246px;
+$s-approach-block-world-total-height: 215px;
+$s-approach-block-world-image: '../img/png-sprite.png';
+$s-approach-block-world: (136px, 37px, -136px, -37px, 39px, 39px, 246px, 215px, '../img/png-sprite.png', 's-approach-block-world', );
+$s-approach-calendar-name: 's-approach-calendar';
+$s-approach-calendar-x: 0px;
+$s-approach-calendar-y: 116px;
+$s-approach-calendar-offset-x: 0px;
+$s-approach-calendar-offset-y: -116px;
+$s-approach-calendar-width: 39px;
+$s-approach-calendar-height: 38px;
+$s-approach-calendar-total-width: 246px;
+$s-approach-calendar-total-height: 215px;
+$s-approach-calendar-image: '../img/png-sprite.png';
+$s-approach-calendar: (0px, 116px, 0px, -116px, 39px, 38px, 246px, 215px, '../img/png-sprite.png', 's-approach-calendar', );
+$s-approach-chemistry-name: 's-approach-chemistry';
+$s-approach-chemistry-x: 86px;
+$s-approach-chemistry-y: 0px;
+$s-approach-chemistry-offset-x: -86px;
+$s-approach-chemistry-offset-y: 0px;
+$s-approach-chemistry-width: 48px;
+$s-approach-chemistry-height: 34px;
+$s-approach-chemistry-total-width: 246px;
+$s-approach-chemistry-total-height: 215px;
+$s-approach-chemistry-image: '../img/png-sprite.png';
+$s-approach-chemistry: (86px, 0px, -86px, 0px, 48px, 34px, 246px, 215px, '../img/png-sprite.png', 's-approach-chemistry', );
+$s-approach-doc-name: 's-approach-doc';
+$s-approach-doc-x: 36px;
+$s-approach-doc-y: 43px;
+$s-approach-doc-offset-x: -36px;
+$s-approach-doc-offset-y: -43px;
+$s-approach-doc-width: 46px;
+$s-approach-doc-height: 42px;
+$s-approach-doc-total-width: 246px;
+$s-approach-doc-total-height: 215px;
+$s-approach-doc-image: '../img/png-sprite.png';
+$s-approach-doc: (36px, 43px, -36px, -43px, 46px, 42px, 246px, 215px, '../img/png-sprite.png', 's-approach-doc', );
+$s-approach-people-name: 's-approach-people';
+$s-approach-people-x: 119px;
+$s-approach-people-y: 116px;
+$s-approach-people-offset-x: -119px;
+$s-approach-people-offset-y: -116px;
+$s-approach-people-width: 48px;
+$s-approach-people-height: 28px;
+$s-approach-people-total-width: 246px;
+$s-approach-people-total-height: 215px;
+$s-approach-people-image: '../img/png-sprite.png';
+$s-approach-people: (119px, 116px, -119px, -116px, 48px, 28px, 246px, 215px, '../img/png-sprite.png', 's-approach-people', );
+$s-arrow-next-name: 's-arrow-next';
+$s-arrow-next-x: 221px;
+$s-arrow-next-y: 132px;
+$s-arrow-next-offset-x: -221px;
+$s-arrow-next-offset-y: -132px;
+$s-arrow-next-width: 15px;
+$s-arrow-next-height: 25px;
+$s-arrow-next-total-width: 246px;
+$s-arrow-next-total-height: 215px;
+$s-arrow-next-image: '../img/png-sprite.png';
+$s-arrow-next: (221px, 132px, -221px, -132px, 15px, 25px, 246px, 215px, '../img/png-sprite.png', 's-arrow-next', );
+$s-arrow-prev-name: 's-arrow-prev';
+$s-arrow-prev-x: 221px;
+$s-arrow-prev-y: 105px;
+$s-arrow-prev-offset-x: -221px;
+$s-arrow-prev-offset-y: -105px;
+$s-arrow-prev-width: 15px;
+$s-arrow-prev-height: 25px;
+$s-arrow-prev-total-width: 246px;
+$s-arrow-prev-total-height: 215px;
+$s-arrow-prev-image: '../img/png-sprite.png';
+$s-arrow-prev: (221px, 105px, -221px, -105px, 15px, 25px, 246px, 215px, '../img/png-sprite.png', 's-arrow-prev', );
+$s-arrow-small-name: 's-arrow-small';
+$s-arrow-small-x: 238px;
+$s-arrow-small-y: 105px;
+$s-arrow-small-offset-x: -238px;
+$s-arrow-small-offset-y: -105px;
+$s-arrow-small-width: 7px;
+$s-arrow-small-height: 11px;
+$s-arrow-small-total-width: 246px;
+$s-arrow-small-total-height: 215px;
+$s-arrow-small-image: '../img/png-sprite.png';
+$s-arrow-small: (238px, 105px, -238px, -105px, 7px, 11px, 246px, 215px, '../img/png-sprite.png', 's-arrow-small', );
+$s-arrow-name: 's-arrow';
+$s-arrow-x: 0px;
+$s-arrow-y: 0px;
+$s-arrow-offset-x: 0px;
+$s-arrow-offset-y: 0px;
+$s-arrow-width: 34px;
+$s-arrow-height: 114px;
+$s-arrow-total-width: 246px;
+$s-arrow-total-height: 215px;
+$s-arrow-image: '../img/png-sprite.png';
+$s-arrow: (0px, 0px, 0px, 0px, 34px, 114px, 246px, 215px, '../img/png-sprite.png', 's-arrow', );
+$s-contacts-mail-name: 's-contacts-mail';
+$s-contacts-mail-x: 0px;
+$s-contacts-mail-y: 190px;
+$s-contacts-mail-offset-x: 0px;
+$s-contacts-mail-offset-y: -190px;
+$s-contacts-mail-width: 34px;
+$s-contacts-mail-height: 25px;
+$s-contacts-mail-total-width: 246px;
+$s-contacts-mail-total-height: 215px;
+$s-contacts-mail-image: '../img/png-sprite.png';
+$s-contacts-mail: (0px, 190px, 0px, -190px, 34px, 25px, 246px, 215px, '../img/png-sprite.png', 's-contacts-mail', );
+$s-contacts-pin-name: 's-contacts-pin';
+$s-contacts-pin-x: 183px;
+$s-contacts-pin-y: 74px;
+$s-contacts-pin-offset-x: -183px;
+$s-contacts-pin-offset-y: -74px;
+$s-contacts-pin-width: 27px;
+$s-contacts-pin-height: 41px;
+$s-contacts-pin-total-width: 246px;
+$s-contacts-pin-total-height: 215px;
+$s-contacts-pin-image: '../img/png-sprite.png';
+$s-contacts-pin: (183px, 74px, -183px, -74px, 27px, 41px, 246px, 215px, '../img/png-sprite.png', 's-contacts-pin', );
+$s-contacts-tel-name: 's-contacts-tel';
+$s-contacts-tel-x: 80px;
+$s-contacts-tel-y: 116px;
+$s-contacts-tel-offset-x: -80px;
+$s-contacts-tel-offset-y: -116px;
+$s-contacts-tel-width: 37px;
+$s-contacts-tel-height: 37px;
+$s-contacts-tel-total-width: 246px;
+$s-contacts-tel-total-height: 215px;
+$s-contacts-tel-image: '../img/png-sprite.png';
+$s-contacts-tel: (80px, 116px, -80px, -116px, 37px, 37px, 246px, 215px, '../img/png-sprite.png', 's-contacts-tel', );
+$s-contacts-time-name: 's-contacts-time';
+$s-contacts-time-x: 183px;
+$s-contacts-time-y: 39px;
+$s-contacts-time-offset-x: -183px;
+$s-contacts-time-offset-y: -39px;
+$s-contacts-time-width: 34px;
+$s-contacts-time-height: 33px;
+$s-contacts-time-total-width: 246px;
+$s-contacts-time-total-height: 215px;
+$s-contacts-time-image: '../img/png-sprite.png';
+$s-contacts-time: (183px, 39px, -183px, -39px, 34px, 33px, 246px, 215px, '../img/png-sprite.png', 's-contacts-time', );
+$s-docs-name: 's-docs';
+$s-docs-x: 36px;
+$s-docs-y: 0px;
+$s-docs-offset-x: -36px;
+$s-docs-offset-y: 0px;
+$s-docs-width: 48px;
+$s-docs-height: 41px;
+$s-docs-total-width: 246px;
+$s-docs-total-height: 215px;
+$s-docs-image: '../img/png-sprite.png';
+$s-docs: (36px, 0px, -36px, 0px, 48px, 41px, 246px, 215px, '../img/png-sprite.png', 's-docs', );
+$s-loupe-name: 's-loupe';
+$s-loupe-x: 221px;
+$s-loupe-y: 159px;
+$s-loupe-offset-x: -221px;
+$s-loupe-offset-y: -159px;
+$s-loupe-width: 16px;
+$s-loupe-height: 16px;
+$s-loupe-total-width: 246px;
+$s-loupe-total-height: 215px;
+$s-loupe-image: '../img/png-sprite.png';
+$s-loupe: (221px, 159px, -221px, -159px, 16px, 16px, 246px, 215px, '../img/png-sprite.png', 's-loupe', );
+$s-manager-icq-name: 's-manager-icq';
+$s-manager-icq-x: 221px;
+$s-manager-icq-y: 0px;
+$s-manager-icq-offset-x: -221px;
+$s-manager-icq-offset-y: 0px;
+$s-manager-icq-width: 25px;
+$s-manager-icq-height: 26px;
+$s-manager-icq-total-width: 246px;
+$s-manager-icq-total-height: 215px;
+$s-manager-icq-image: '../img/png-sprite.png';
+$s-manager-icq: (221px, 0px, -221px, 0px, 25px, 26px, 246px, 215px, '../img/png-sprite.png', 's-manager-icq', );
+$s-manager-skype-name: 's-manager-skype';
+$s-manager-skype-x: 221px;
+$s-manager-skype-y: 80px;
+$s-manager-skype-offset-x: -221px;
+$s-manager-skype-offset-y: -80px;
+$s-manager-skype-width: 23px;
+$s-manager-skype-height: 23px;
+$s-manager-skype-total-width: 246px;
+$s-manager-skype-total-height: 215px;
+$s-manager-skype-image: '../img/png-sprite.png';
+$s-manager-skype: (221px, 80px, -221px, -80px, 23px, 23px, 246px, 215px, '../img/png-sprite.png', 's-manager-skype', );
+$s-manager-tel-name: 's-manager-tel';
+$s-manager-tel-x: 221px;
+$s-manager-tel-y: 54px;
+$s-manager-tel-offset-x: -221px;
+$s-manager-tel-offset-y: -54px;
+$s-manager-tel-width: 24px;
+$s-manager-tel-height: 24px;
+$s-manager-tel-total-width: 246px;
+$s-manager-tel-total-height: 215px;
+$s-manager-tel-image: '../img/png-sprite.png';
+$s-manager-tel: (221px, 54px, -221px, -54px, 24px, 24px, 246px, 215px, '../img/png-sprite.png', 's-manager-tel', );
+$s-manager-tel2-name: 's-manager-tel2';
+$s-manager-tel2-x: 221px;
+$s-manager-tel2-y: 28px;
+$s-manager-tel2-offset-x: -221px;
+$s-manager-tel2-offset-y: -28px;
+$s-manager-tel2-width: 24px;
+$s-manager-tel2-height: 24px;
+$s-manager-tel2-total-width: 246px;
+$s-manager-tel2-total-height: 215px;
+$s-manager-tel2-image: '../img/png-sprite.png';
+$s-manager-tel2: (221px, 28px, -221px, -28px, 24px, 24px, 246px, 215px, '../img/png-sprite.png', 's-manager-tel2', );
+$s-social-viber-name: 's-social-viber';
+$s-social-viber-x: 34px;
+$s-social-viber-y: 156px;
+$s-social-viber-offset-x: -34px;
+$s-social-viber-offset-y: -156px;
+$s-social-viber-width: 32px;
+$s-social-viber-height: 32px;
+$s-social-viber-total-width: 246px;
+$s-social-viber-total-height: 215px;
+$s-social-viber-image: '../img/png-sprite.png';
+$s-social-viber: (34px, 156px, -34px, -156px, 32px, 32px, 246px, 215px, '../img/png-sprite.png', 's-social-viber', );
+$s-social-vk-name: 's-social-vk';
+$s-social-vk-x: 0px;
+$s-social-vk-y: 156px;
+$s-social-vk-offset-x: 0px;
+$s-social-vk-offset-y: -156px;
+$s-social-vk-width: 32px;
+$s-social-vk-height: 32px;
+$s-social-vk-total-width: 246px;
+$s-social-vk-total-height: 215px;
+$s-social-vk-image: '../img/png-sprite.png';
+$s-social-vk: (0px, 156px, 0px, -156px, 32px, 32px, 246px, 215px, '../img/png-sprite.png', 's-social-vk', );
+$s-social-whatsapp-name: 's-social-whatsapp';
+$s-social-whatsapp-x: 136px;
+$s-social-whatsapp-y: 78px;
+$s-social-whatsapp-offset-x: -136px;
+$s-social-whatsapp-offset-y: -78px;
+$s-social-whatsapp-width: 32px;
+$s-social-whatsapp-height: 32px;
+$s-social-whatsapp-total-width: 246px;
+$s-social-whatsapp-total-height: 215px;
+$s-social-whatsapp-image: '../img/png-sprite.png';
+$s-social-whatsapp: (136px, 78px, -136px, -78px, 32px, 32px, 246px, 215px, '../img/png-sprite.png', 's-social-whatsapp', );
+$s-talk-name: 's-talk';
+$s-talk-x: 86px;
+$s-talk-y: 72px;
+$s-talk-offset-x: -86px;
+$s-talk-offset-y: -72px;
+$s-talk-width: 43px;
+$s-talk-height: 37px;
+$s-talk-total-width: 246px;
+$s-talk-total-height: 215px;
+$s-talk-image: '../img/png-sprite.png';
+$s-talk: (86px, 72px, -86px, -72px, 43px, 37px, 246px, 215px, '../img/png-sprite.png', 's-talk', );
+$s-talks-name: 's-talks';
+$s-talks-x: 86px;
+$s-talks-y: 36px;
+$s-talks-offset-x: -86px;
+$s-talks-offset-y: -36px;
+$s-talks-width: 48px;
+$s-talks-height: 34px;
+$s-talks-total-width: 246px;
+$s-talks-total-height: 215px;
+$s-talks-image: '../img/png-sprite.png';
+$s-talks: (86px, 36px, -86px, -36px, 48px, 34px, 246px, 215px, '../img/png-sprite.png', 's-talks', );
+$s-up-name: 's-up';
+$s-up-x: 221px;
+$s-up-y: 177px;
+$s-up-offset-x: -221px;
+$s-up-offset-y: -177px;
+$s-up-width: 11px;
+$s-up-height: 7px;
+$s-up-total-width: 246px;
+$s-up-total-height: 215px;
+$s-up-image: '../img/png-sprite.png';
+$s-up: (221px, 177px, -221px, -177px, 11px, 7px, 246px, 215px, '../img/png-sprite.png', 's-up', );
+$s-work-mail-name: 's-work-mail';
+$s-work-mail-x: 36px;
+$s-work-mail-y: 87px;
+$s-work-mail-offset-x: -36px;
+$s-work-mail-offset-y: -87px;
+$s-work-mail-width: 35px;
+$s-work-mail-height: 26px;
+$s-work-mail-total-width: 246px;
+$s-work-mail-total-height: 215px;
+$s-work-mail-image: '../img/png-sprite.png';
+$s-work-mail: (36px, 87px, -36px, -87px, 35px, 26px, 246px, 215px, '../img/png-sprite.png', 's-work-mail', );
+$s-work-plane-name: 's-work-plane';
+$s-work-plane-x: 41px;
+$s-work-plane-y: 116px;
+$s-work-plane-offset-x: -41px;
+$s-work-plane-offset-y: -116px;
+$s-work-plane-width: 37px;
+$s-work-plane-height: 37px;
+$s-work-plane-total-width: 246px;
+$s-work-plane-total-height: 215px;
+$s-work-plane-image: '../img/png-sprite.png';
+$s-work-plane: (41px, 116px, -41px, -116px, 37px, 37px, 246px, 215px, '../img/png-sprite.png', 's-work-plane', );
+$s-work-tel-name: 's-work-tel';
+$s-work-tel-x: 183px;
+$s-work-tel-y: 117px;
+$s-work-tel-offset-x: -183px;
+$s-work-tel-offset-y: -117px;
+$s-work-tel-width: 32px;
+$s-work-tel-height: 32px;
+$s-work-tel-total-width: 246px;
+$s-work-tel-total-height: 215px;
+$s-work-tel-image: '../img/png-sprite.png';
+$s-work-tel: (183px, 117px, -183px, -117px, 32px, 32px, 246px, 215px, '../img/png-sprite.png', 's-work-tel', );
+$spritesheet-width: 246px;
+$spritesheet-height: 215px;
+$spritesheet-image: '../img/png-sprite.png';
+$spritesheet-sprites: ($s-approach-block-free, $s-approach-block-mail, $s-approach-block-manager, $s-approach-block-world, $s-approach-calendar, $s-approach-chemistry, $s-approach-doc, $s-approach-people, $s-arrow-next, $s-arrow-prev, $s-arrow-small, $s-arrow, $s-contacts-mail, $s-contacts-pin, $s-contacts-tel, $s-contacts-time, $s-docs, $s-loupe, $s-manager-icq, $s-manager-skype, $s-manager-tel, $s-manager-tel2, $s-social-viber, $s-social-vk, $s-social-whatsapp, $s-talk, $s-talks, $s-up, $s-work-mail, $s-work-plane, $s-work-tel, );
+$spritesheet: (246px, 215px, '../img/png-sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

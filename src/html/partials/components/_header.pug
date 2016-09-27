@@ -1,0 +1,49 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  +e.inner.container
+    +e.logo
+      // Logo
+      +b.A.logo(href="index.html")       
+        img(src="img/logo-header.png", alt="logo", title="logo")
+    +e.wrapper
+      +e.info
+        +e.block--contacts
+          +e.address-wrapper 
+            +e.line Санкт-Петербург
+            +e.line Лиговский проспект, 11
+          +e.time-wrapper 
+            +e.line Часы работы
+            +e.line с 9:30 до 11:00
+          +e.links-wrapper 
+            +e.link--tel(href="tel:+78123350511", target="_blank") +7 (812) 335-05-11
+            +e.link--email(href="mailto:info@intergost.ru", target="_blank") info@intergost.ru
+        +e.block--btn 
+          +b.A.btn--whatsapp(href="tel:+78123350511", target="_blank")
+          +b.A.btn--viber(href="tel:+78123350511", target="_blank")
+          +b.A.btn--header(href="#") Узнать стоимость
+      // Nav
+      +b.NAV.nav--header
+        +e.hamburger
+          +b.A.hamburger(href="#")
+            span
+        +e.UL.list
+          +e.item 
+            +e.A.link(href="page.html") Услуги
+          +e.item 
+            +e.A.link(href="page.html") О компании
+          +e.item
+            +e.A.link(href="page.html") Изготовителям РФ
+          +e.item
+            +e.A.link(href="page.html") Импортерам
+          +e.item
+            +e.A.link(href="page.html") Экспортерам
+          +e.item
+            +e.A.link(href="page-contacts.html") Контакты
+          +e.item
+            +e.A.link--search(href="#")
+            +b.search
+              +e.FORM.form
+                +e.INPUT.input(type='text', name='Поиск', placeholder='Поиск...')
+

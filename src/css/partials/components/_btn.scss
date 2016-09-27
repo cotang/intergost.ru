@@ -1,0 +1,71 @@
+.btn{
+  font-size: $font-size-btn;
+  text-transform: uppercase;
+  font-family: $font-family;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: $orange;
+  color: $text-color-white;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+  font-weight: 700;   
+  padding: 10px 30px;
+  margin: 0;
+  &:hover, &:focus, &:active{
+    color: $text-color-white;
+    text-decoration: none;
+  }
+  &--header{
+    padding: 20px 0; 
+    width: calc(100% - 32px);
+    margin-left: 32px;
+    box-shadow: none;
+    text-align: center;
+  }
+  &--blue{
+    background-color: $blue;
+  }
+  &--pale{
+    background-color: $pale;
+    color: $text-color;
+    &:hover, &:focus, &:active{
+      color: $blue;
+    }
+  }
+
+  &--whatsapp{
+    box-shadow: none;
+    padding: 0;
+    @include sprite($s-social-whatsapp);
+  } 
+  &--viber{
+    box-shadow: none;
+    padding: 0;
+    @include sprite($s-social-viber);
+  }
+  &--vk{
+    box-shadow: none;
+    padding: 0;
+    @include sprite($s-social-vk);
+  }
+}
+
+.up{
+  display: none;
+  position: fixed;
+  font-size: $font-size-smallest;
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-weight: $bold;
+  bottom: 30px;
+  right: 30px;
+  padding: 3px 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+  background-color: $grey; 
+  &:after{
+    content: "";
+    margin-left: 5px;
+    display: inline-block;
+    @include sprite($s-up); 
+  }
+}

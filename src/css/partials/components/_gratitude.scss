@@ -1,0 +1,77 @@
+.gratitude{
+  margin-top: 70px;
+  text-align: center;
+  // &__text{
+  //   padding: 0 220px;
+  //   margin-bottom: 55px;
+  // }
+  &__gallery{
+    background-color: $pale;
+    margin-bottom: 20px;
+    &:before, &:after{
+      content: "";
+      display: block;
+      background-color: $white;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      width: 100%;
+      @include mq($from:xs, $until:xl){
+        content: none;
+      }
+    }
+    &:before{
+      top: 0;
+      height: 30px;
+    }
+    &:after{
+      bottom: 0;
+      height: 100px;
+    }
+  }
+  &__slide{
+    margin: 0 30px;
+    transform: scale(0.8);
+    position: relative;
+    z-index: 3;    
+    &:hover, &:focus {
+      transform: scale(1.0);
+    }
+  }
+  &__img{
+    display: block;
+    border: 2px solid $grey;
+  }
+  &__modal{
+    display: none;
+    z-index: 9;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid $grey;  
+    img{
+      width: auto;
+      height: auto;
+      max-height: calc(100vh - 40px);
+      display: block;
+    }
+  }
+
+
+  &__text{
+    display: block;
+    padding: 0 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: $font-size-list;
+  }
+  .slick-list{
+    z-index: 3;
+  }
+  .slick-arrow{
+    top: 45%;
+  }
+}

@@ -1,0 +1,109 @@
+.form{
+  text-align: left;
+  position: relative;
+  font-family: $font-family;
+  margin: 40px auto;
+  max-width: 450px;
+  // @include mq($from:xs, $until:sm){
+  //   padding: 0 20px;
+  // } 
+
+  &__close{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: inline-block;
+    transform: translateY(-135%);
+  }
+  &__title{
+    margin: 0;
+    padding: 25px 15px 10px;
+    font-weight: $regular;
+    text-transform: uppercase;
+    font-size: $font-size-promo;
+    line-height: 1.3;
+  }
+  &__input{
+    padding: 30px 15px 10px;    
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $grey;
+    background-color: transparent;
+
+    &::-webkit-input-placeholder{
+      color: $text-color;         
+    }       
+    &::placeholder{
+      color: $text-color;         
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  }
+  &__textarea{
+    // font-size: $font-size-small;
+    margin-top: 15px;
+    padding: 10px 15px 10px;   
+    width: 100%;
+    border: 1px solid $grey;
+    height: 150px;
+
+    &::-webkit-input-placeholder{
+      color: $text-color;         
+    }       
+    &::placeholder{
+      color: $text-color;         
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    } 
+  }
+  &__text{
+    font-family: $font-family--italic;
+    font-style: italic;
+    font-size: $font-size-bigger;
+    margin: 35px 15px 20px;
+  }
+  .btn{
+    margin: 20px 15px; 
+  }
+
+  &--review{
+    text-align: center;
+    .form__title{
+      font-weight: $bold;
+    }
+    .btn{
+      background-color: $blue; 
+    }    
+  }
+  &--subscribe{
+    max-width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+    .form-group:nth-of-type(1){
+      flex: 0 0 60%;
+      max-width: 60%;
+      @include mq($from:xs, $until:md){
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    .form-group:nth-of-type(2){
+      flex: 0 0 40%;
+      max-width: 40%;
+      @include mq($from:xs, $until:md){
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+

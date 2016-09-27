@@ -1,0 +1,27 @@
+include ../abstracts/bemto/bemto.pug
+
+// Promo
++b.SECTION.promo--about
+  +e.inner.container
+    +e.content
+      +e.bg
+      +b.facts--about
+        +e.UL.list
+          +e.item 
+            +e.text Выполняем
+              span.figure 100
+              =" заказов в месяц"
+          +e.item 
+            +e.text С
+              span.figure 1998
+              =" года на рынке"        
+          +e.item 
+            +e.text Более
+              span.figure 1500
+              =" постоянных клиентов"
+          +e.item
+            +e.text
+              span.figure 100
+              =" офисов по России"
+    +e.form
+      include _form--application.pug   

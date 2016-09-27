@@ -1,0 +1,112 @@
+.our-approach{
+  background-color: $blue;
+  &__inner{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__content{
+    flex: 0 0 41.67%;
+    max-width: 41.67%;
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  }  
+  &__title{
+    margin: 120px 0 50px;
+    text-transform: uppercase;
+    color: $text-color-white;
+    font-family: $font-family;
+    @include mq($from:xs, $until:sm){
+      margin: 50px 0 50px;
+    }
+  }
+
+  &__facts{
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+    @include mq($from:xs, $until:lg){
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }  
+  }
+  &__text{
+    color: $text-color-white;
+    font-weight: $light;
+    font-size: $font-size-list;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    line-height: 1.4;
+  }
+
+}
+.advantages{
+  margin-top: 60px;
+  margin-bottom: -100px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    background-color: $white;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    padding: 140px 10px 60px;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      padding-top: 80px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    } 
+
+    &:nth-of-type(1){
+      .advantages__text:before{
+        @include sprite($s-approach-block-manager);
+      }
+    }
+    &:nth-of-type(2){
+      .advantages__text:before{
+        @include sprite($s-approach-block-mail);
+      }
+    }
+    &:nth-of-type(3){
+      .advantages__text:before{
+        @include sprite($s-approach-block-free);
+      }
+    }
+    &:nth-of-type(4){
+      .advantages__text:before{
+        @include sprite($s-approach-block-world);
+      }
+    }
+  }
+  &__text{
+    font-weight: $light;
+    text-transform: uppercase;
+    position: relative;
+    font-size: $font-size-bigger;
+    @include mq($from:xs, $until:sm){
+      font-size: $font-size;
+    } 
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

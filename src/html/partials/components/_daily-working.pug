@@ -1,0 +1,11 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.daily-working
+  +e.inner.container
+    +e.H2.title Наши рабочие будни
+    +e.text In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van 
+  +e.gallery
+    - for (var i = 1; i < 8; ++i){
+      +e.slide
+        img(src= "img/work.jpg" alt="work" title="work")
+    - }
