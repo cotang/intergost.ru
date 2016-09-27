@@ -1281,7 +1281,7 @@ img {
     margin: 40px 0 50px;
     padding-left: 30px; }
   .promo--about .promo__form {
-    margin: 80px 0 90px;
+    margin: 80px 0 0;
     padding-left: 30px; }
 
 .solution {
@@ -2234,6 +2234,8 @@ img {
     font-weight: 700; }
   .reviews__articles {
     padding: 0 125px; }
+  .reviews__form {
+    display: none; }
 
 .review {
   text-align: left;
