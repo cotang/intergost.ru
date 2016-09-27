@@ -872,6 +872,9 @@ img {
 .figure {
   font-family: Roboto, Helvetica, Arial, sans-serif; }
 
+.scrolloff {
+  pointer-events: none; }
+
 .header {
   font-size: 14px; }
   .header__inner {
