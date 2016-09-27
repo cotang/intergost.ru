@@ -1,9 +1,0 @@
-mixin newsItem(heading, date, img, alt)
-  +b.ARTICLE.news-section-item
-    +e.img
-      img(src= "img/news/" + img alt= alt title= alt)
-    +e.wrapper
-      +e.H3.heading
-        a(href="single-news.html") #{heading}
-      +e.date #{date} 
-       
