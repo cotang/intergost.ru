@@ -4,6 +4,23 @@
 
 jQuery(document).ready(function($){  
 
+  /* Map - stop scrolling */
+  var iFrameWrapper = $('.contacts-section__map');
+  var iFrame = $('.contacts-section__map iframe');
+
+  $(iFrame).addClass('scrolloff');                // set the mouse events to none when doc is ready  
+  $(iFrameWrapper).on("mouseup",function(){          // lock it when mouse up
+      $(iFrame).addClass('scrolloff'); 
+      //somehow the mouseup event doesn't get call...
+  });
+  $(iFrameWrapper).on("mousedown",function(){        // when mouse down, set the mouse events free
+      $(iFrame).removeClass('scrolloff');
+  });
+  $(iFrame).mouseleave(function () {              // becuase the mouse up doesn't work... 
+      $(iFrame).addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                  // or you can do it on some other event
+  });
+
   /* Hamburger */
   $('.hamburger').click(function(e){
     e.preventDefault();
