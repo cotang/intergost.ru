@@ -65,7 +65,7 @@
   }
   &--about{
     .promo__form{
-      margin: 80px 0 90px;
+      margin: 80px 0 0;
       padding-left: 30px; 
       @include mq($from:xs, $until:lg){
         margin: 40px 0 0;
