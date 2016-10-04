@@ -25,11 +25,11 @@
       text-align: center;
     }
 
-    .form__title{
-      background-color: $blue--form;
-    }
+    // .form__title{
+    //   background-color: $blue--form;
+    // }
     .form__input{
-      background-color: $blue--form;
+      // background-color: $blue--form;
       &::-webkit-input-placeholder{
         color: $text-color-white;         
       }       
@@ -37,9 +37,9 @@
         color: $text-color-white;         
       } 
     }
-    .help-block{
-      background-color: $blue--form;
-    }
+    // .help-block{
+    //   background-color: $blue--form;
+    // }
   }
   &__bg{
     position: absolute;

@@ -5,13 +5,16 @@
   &--reviews{
     .content{
       margin-top: 80px;
+      @include mq($from:xs, $until:md){
+        margin-top: 40px;
+      }
     }
     .content__title{
       margin-bottom: 30px;
     }
   }
   &--front-page{
-    .clients__page-link{
+    .clients-section__page-link{
       display: block;
     }
   }  

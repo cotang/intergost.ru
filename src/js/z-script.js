@@ -4,18 +4,36 @@
 
 jQuery(document).ready(function($){  
 
-    /* Map */
-    var map = new GMaps({
-        el: '.contacts-section__map',
-        lat: 59.937112,
-        lng: 30.364098,
-        scrollwheel: false
-    });
-    map.addMarker({
-        lat: 59.937112,
-        lng: 30.364098,
-    });
- 
+  /* Map - stop scrolling */
+  var iFrameWrapper = $('.contacts-section__map');
+  var iFrame = $('.contacts-section__map iframe');
+
+  $(iFrame).addClass('scrolloff');                // set the mouse events to none when doc is ready  
+  $(iFrameWrapper).on("mouseup",function(){          // lock it when mouse up
+      $(iFrame).addClass('scrolloff'); 
+      //somehow the mouseup event doesn't get call...
+  });
+  $(iFrameWrapper).on("mousedown",function(){        // when mouse down, set the mouse events free
+      $(iFrame).removeClass('scrolloff');
+  });
+  $(iFrame).mouseleave(function () {              // becuase the mouse up doesn't work... 
+      $(iFrame).addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                  // or you can do it on some other event
+  });
+
+
+  // $('.how-we-work').onScreen({  
+  //   $(this).find('.how-we-work__item:after').animate({right, 0}, 3000);
+  // });
+
+
+  /* Открывание всех логотипов клиентов */
+  $('.clients__more').click(function(e){
+    e.preventDefault();
+    $(this).closest('.clients').find('.clients__item').css('display', 'block');
+    $(this).hide();
+  }); 
+
   /* Hamburger */
   $('.hamburger').click(function(e){
     e.preventDefault();

@@ -48,7 +48,8 @@
 
   &:nth-child(even){    
     margin-left: 100px;
-    margin-right: 30px;  
+    margin-right: 30px; 
+    background-color: $palest; 
     @include mq($from:xs, $until:lg){
       margin-left: 20px;
       margin-right: 10px;

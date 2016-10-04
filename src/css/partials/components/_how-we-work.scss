@@ -57,10 +57,11 @@
       &:after{
         content: "";
         position: absolute;
+        z-index: 3;
         top: 0;
-        right: 0;
+        // right: 0;
+        right: 100px;
         transform: translateX(100%);
-        z-index: 2;
         border: 115px solid transparent; 
         border-left: 90px solid $white;
         @include mq($from:xs, $until:xl){
@@ -74,6 +75,10 @@
       .how-we-work__icon{
         @include sprite($s-work-tel); 
       }
+      .how-we-work__content{
+        position: relative;
+        z-index: 4;
+      }
     }
     &--grey{
       background-color: $grey;
@@ -86,10 +91,11 @@
       &:after{
         content: "";
         position: absolute;
+        z-index: 1;
         top: 0;
-        right: 0;
+        // right: 0;
+        right: 100px;
         transform: translateX(100%);
-        z-index: 2;
         border: 115px solid transparent; 
         border-left: 90px solid $grey;
         @include mq($from:xs, $until:xl){
@@ -99,6 +105,10 @@
       .how-we-work__icon{
         @include sprite($s-work-mail); 
       }
+      .how-we-work__content{
+        position: relative;
+        z-index: 2;
+      }
     }
     &--blue{
       background-color: $blue;
@@ -106,6 +116,7 @@
       padding-right: 90px;
       padding-left: 120px;
       padding-right: 0;
+      z-index: 0;
       @include mq($from:xs, $until:xl){
         padding-left: 50px;
         padding-right: 50px;

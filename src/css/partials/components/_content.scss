@@ -2,6 +2,9 @@
   margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
+  @include mq($from:xs, $until:md){
+    margin-top: 40px;
+  }
 
   &__title{
     text-transform: uppercase;

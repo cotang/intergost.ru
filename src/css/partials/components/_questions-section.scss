@@ -1,11 +1,17 @@
 .questions-section{
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  z-index: -2;
+  background-color: $paler;
   @include mq($from:xs, $until:sm){
     background-color: $blue;
   }
 
   &__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__specialist{
     flex: 0 0 66.67%;
     max-width: 66.67%;
     position: relative;
@@ -16,7 +22,7 @@
     }
   }
   &__form{
-    margin: 0 0 90px;
+    margin: 0;
     flex: 0 0 33.33%;
     max-width: 33.33%;
     @include mq($from:xs, $until:lg){
@@ -32,7 +38,7 @@
   }
   &__bg{
     position: absolute;
-    top: 0;
+    top: -30px;
     right: 60px;
     height: 500px;
     width: 1500px;
