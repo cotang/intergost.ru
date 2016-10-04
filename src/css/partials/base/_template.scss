@@ -2,6 +2,11 @@
 //  Базовые стили
 //------------------------------------------------------------------------------
 
+@include font-face(Raleway, Raleway-Medium, raleway-medium-webfont);
+@include font-face('Lato Black Italic', lato-blackitalic, lato-blackitalic-webfont);
+@include font-face(Roboto, roboto-regular, roboto-regular-webfont);
+@include font-face('Open Sans Italic', opensansitalic, opensansitalic-webfont);
+
 *,
 *:before,
 *:after {
