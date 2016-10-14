@@ -2,11 +2,11 @@
   text-align: left;
   position: relative;
   font-family: $font-family;
-  margin: 40px auto;
+  margin: 0 auto;
   max-width: 450px;
-  // @include mq($from:xs, $until:sm){
-  //   padding: 0 20px;
-  // } 
+  @include mq($from:xs, $until:lg){
+    text-align: center;
+  } 
 
   &__close{
     position: absolute;
@@ -18,17 +18,23 @@
   &__title{
     margin: 0;
     padding: 25px 15px 10px;
-    font-weight: $regular;
+    font-weight: normal;
+    font-family: $font-family;
     text-transform: uppercase;
     font-size: $font-size-promo;
     line-height: 1.3;
   }
   &__input{
-    padding: 30px 15px 10px;    
+    padding: 30px 15px 10px; 
+    font-family: $font-family-light;
+    font-weight: normal;   
     width: 100%;
     border: none;
     border-bottom: 1px solid $grey;
     background-color: transparent;
+    &:focus{
+      outline: none;
+    }
 
     &::-webkit-input-placeholder{
       color: $text-color;         
@@ -66,7 +72,6 @@
   }
   &__text{
     font-family: $font-family--italic;
-    font-style: italic;
     font-size: $font-size-bigger;
     margin: 35px 15px 20px;
   }
@@ -87,22 +92,27 @@
     max-width: inherit;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0 0;
+    justify-content: space-between;
+    margin: 0;
     .form-group:nth-of-type(1){
-      flex: 0 0 60%;
-      max-width: 60%;
+      flex: 0 0 calc(100% - 220px);
+      max-width: calc(100% - 220px);
       @include mq($from:xs, $until:md){
         flex: 0 0 100%;
         max-width: 100%;
       }
     }
     .form-group:nth-of-type(2){
-      flex: 0 0 40%;
-      max-width: 40%;
+      flex: 0 0 220px;
+      max-width: 220px;
       @include mq($from:xs, $until:md){
         flex: 0 0 100%;
         max-width: 100%;
       }
+    }
+    .form__input{
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

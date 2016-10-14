@@ -1,0 +1,52 @@
+.about{
+  background-color: $white;
+  color: $text-color;
+  margin-top: 30px;
+  height: 100%;
+  box-shadow: $box-shadow;
+  position: relative;
+  padding-right: 10%;
+  &:before{
+    content: '';
+    position: absolute;
+    background-color: $white;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 600px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.22);
+  }
+  @include mq($from:xs, $until:lg){
+    padding-right: 20px;
+  }
+
+  &__title{
+    padding-top: 70px;
+    margin: 0;
+    line-height: $line-height-normal;
+    text-transform: uppercase;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    font-size: $font-size-title;
+    @include mq($from:xs, $until:xl){
+      max-width: 500px;
+    }
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+      max-width: inherit;
+    }
+    @include mq($from:xs, $until:sm){
+      margin-top: 50px;
+      font-size: $font-size-title;
+    }
+  }
+  &__text{
+    margin: 40px 0 40px;
+    font-family: $font-family--roboto; 
+    
+    @include mq($from:xs, $until:lg){
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .glossary{
-  margin-bottom: 50px;
+  margin-top: -10px;
+  margin-bottom: 60px;
 
   &__title{
     text-align: center;
@@ -7,23 +8,24 @@
     font-family: $font-family;
     margin: 0 0 40px;
     font-size: $font-size-title;
-    font-weight: $bold;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
   }
   &__list{
-    padding-left: 0;
+    padding: 0 70px 20px;
     margin: 0;
     list-style-type: none;
-    padding-bottom: 20px;
     border-bottom: 1px solid $grey;
     display: flex;
     flex-wrap: nowrap;
-    font-family: $font-family;
     justify-content: space-between;
-    font-weight: $bold;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
     font-size: $font-size-list;
-    @include mq($from:xs, $until:md){
+    @include mq($from:xs, $until:lg){
       flex-wrap: wrap;
       justify-content: flex-start;
+      padding: 0 20px 20px;
     }
   }
   &__item{
@@ -66,6 +68,7 @@
     @include mq($from:xs, $until:sm){
       flex: 0 0 100%;
       max-width: 100%;
+      text-align: center;
     }
   }
   &__link{

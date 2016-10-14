@@ -1,8 +1,9 @@
 .nav{
-  font-family: $font-family;
+  font-family: $font-family-bold;
+  font-weight: normal;
   text-transform: uppercase;
   margin: 22px 0;
-  font-weight: $bold; 
+   
   @include mq($from:xs, $until:md){
     margin: 0 0 20px;
   }
@@ -45,6 +46,7 @@
     }    
   }
   &--footer{
+    margin: 15px 0;
     .nav{
       margin-top: 10px;      
     }

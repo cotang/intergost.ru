@@ -1,14 +1,15 @@
 .how-we-work{
-  margin-top: 60px;
-  margin-bottom: 70px;
+  margin-top: 40px;
+  // margin-bottom: 80px;
   text-align: center;
 
   &__title{
     text-transform: uppercase;
     font-family: $font-family;
-    margin: 25px 0 90px;
+    margin: 0 0 95px;
     font-size: $font-size-title;
-    font-weight: $bold;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
   }
   &__inner{
     position: relative;
@@ -38,8 +39,8 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
     position: relative;
-    padding-top: 110px;
-    padding-bottom: 45px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     @include mq($from:xs, $until:md){
       flex: 0 0 100%;
       max-width: 100%;
@@ -59,11 +60,10 @@
         position: absolute;
         z-index: 3;
         top: 0;
-        // right: 0;
-        right: 100px;
+        right: 0;
         transform: translateX(100%);
-        border: 115px solid transparent; 
-        border-left: 90px solid $white;
+        border: 112px solid transparent; 
+        border-left: 100px solid $white;
         @include mq($from:xs, $until:xl){
           content: none;
         }
@@ -93,11 +93,10 @@
         position: absolute;
         z-index: 1;
         top: 0;
-        // right: 0;
-        right: 100px;
+        right: 0;
         transform: translateX(100%);
-        border: 115px solid transparent; 
-        border-left: 90px solid $grey;
+        border: 112px solid transparent; 
+        border-left: 100px solid $grey;
         @include mq($from:xs, $until:xl){
           content: none;
         }
@@ -157,7 +156,7 @@
     font-family: $font-family--roboto;
     text-transform: uppercase;
     font-weight: $bold;
-    font-size: $font-size-title;
+    font-size: $font-size-promo;
     text-align: left;
     position: absolute;
     top: -30px;
@@ -176,9 +175,9 @@
   }
   &__text{
     margin-top: 15px;
-    font-family: $font-family;
+    font-family: $font-family-bold;
+    font-weight: normal;
     text-transform: uppercase;
-    font-weight: $bold;
     font-size: $font-size-list;
     text-align: left;
   }

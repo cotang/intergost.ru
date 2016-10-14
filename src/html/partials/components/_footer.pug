@@ -18,22 +18,24 @@ include ../abstracts/bemto/bemto.pug
       +b.NAV.nav--footer
         +e.UL.list
           +e.item 
-            +e.A.link(href="page.html") Услуги
+            +e.A.link(href="page-services.html") Услуги
           +e.item 
-            +e.A.link(href="page.html") О компании
+            +e.A.link(href="page-about.html") О компании
           +e.item
-            +e.A.link(href="page.html") Изготовителям РФ
+            +e.A.link(href="page-russian.html") Изготовителям РФ
           +e.item
-            +e.A.link(href="page.html") Импортерам
+            +e.A.link(href="page-import.html") Импортерам
           +e.item
-            +e.A.link(href="page.html") Экспортерам
+            +e.A.link(href="page-export.html") Экспортерам
           +e.item
             +e.A.link(href="page-contacts.html") Контакты
 +b.A.up(href="#") наверх
-+b.overlay
-  //- +e.form
-  //-   include _form--question.pug
-  //-   include _form--call.pug
++b.modal
+  +e.overlay
+  +e.form
+    +e.A.close(href="#")
+    include _form--application.pug
+    //- include _form--question.pug
 
 
 

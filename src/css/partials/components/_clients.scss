@@ -5,10 +5,10 @@
 
   &__title{
     text-transform: uppercase;
-    font-family: $font-family;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
     margin: 25px 0 45px;
     font-size: $font-size-title;
-    font-weight: $bold;
   }
   &__list{
     margin: 0;
@@ -31,7 +31,17 @@
         display: none;
       }
     }
-    @include mq($from:xs, $until:md){
+    @include mq($from:sm, $until:md){
+      flex: 0 0 50%;
+      max-width: 50%;
+      &:nth-of-type(3)
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6){
+        display: none;
+      }
+    }
+    @include mq($from:xs, $until:sm){
       flex: 0 0 100%;
       max-width: 100%;
       &:nth-of-type(2),
@@ -67,8 +77,8 @@
   }
   &__more{
     position: relative;
-    font-family: $font-family;
-    font-weight: $semibold;
+    font-family: $font-family-bold;
+    font-weight: normal;
     text-transform: uppercase;
     border-bottom: 1px dashed $text-color-grey;
     &:after{

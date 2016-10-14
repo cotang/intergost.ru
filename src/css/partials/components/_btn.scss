@@ -1,14 +1,13 @@
 .btn{
   font-size: $font-size-btn;
   text-transform: uppercase;
-  font-family: $font-family;
+  font-family: $font-family-bold;
   display: inline-block;
   border: none;
   outline: none;
   background-color: $orange;
   color: $text-color-white;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
-  font-weight: 700;   
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35); 
   padding: 10px 30px;
   margin: 0;
   &:hover, &:focus, &:active{
@@ -56,7 +55,6 @@
   font-size: $font-size-smallest;
   font-family: $font-family;
   text-transform: uppercase;
-  font-weight: $bold;
   bottom: 30px;
   right: 30px;
   padding: 3px 10px;

@@ -19,12 +19,12 @@
   &__title{
     color: $text-color-white;
     text-transform: uppercase;
-    font-family: $font-family;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
     margin: 0;
     padding-top: 60px;
     padding-bottom: 90px;
     font-size: $font-size-title;
-    font-weight: $bold;
   }
   &__articles{
     padding: 0 125px;
@@ -55,7 +55,7 @@
       margin-right: 10px;
     }  
     .review__text:before{
-      transform: translateX(-50%) ;
+      @include sprite($s-talk-left);
     }
   }
   &__text{
@@ -64,7 +64,7 @@
     &:before{
       content: "";
       display: block;
-      @include sprite($s-talk);
+      @include sprite($s-talk-right);
       position: absolute;
       top: 0;
       left: -50px;

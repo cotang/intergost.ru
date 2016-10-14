@@ -1,0 +1,30 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--contacts
+    // Content
+    +b.SECTION.content
+      .container
+        +e.H1.title Контакты
+        +b.choise--city
+          +e.text Выберите свой город:
+          +e.UL.list 
+            +e.item 
+              +e.link(href="#spb") Санкт-Петербург
+            +e.slash /
+            +e.item 
+              +e.link(href="#kazan") Казань
+            +e.slash /
+            +e.item 
+              +e.link(href="#nn") Нижний Новгород
+            +e.slash /
+            +e.item 
+              +e.link(href="#rostov") Ростов-на-Дону
+            +e.slash /
+            +e.item 
+              +e.link(href="#minsk") Минск
+
+    // Offices
+    include partials/components/_offices.pug
+    // Questions section
+    include partials/components/_questions-section.pug

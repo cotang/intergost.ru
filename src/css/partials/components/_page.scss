@@ -2,21 +2,75 @@
   .form__close{
     display: none;
   }
+  &--contacts{
+    .content__title{
+      text-align: center;
+    }
+  }
   &--reviews{
     .content{
-      margin-top: 80px;
+      margin-top: 70px;
       @include mq($from:xs, $until:md){
         margin-top: 40px;
       }
     }
     .content__title{
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
-  &--front-page{
+  &--about{
     .clients-section__page-link{
-      display: block;
+      display: none;
     }
-  }  
+  } 
+
+  &--single-news{
+    .content{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 270px;
+        background-color: $blue;
+      }
+    }
+    .content__title{
+      font-size: $font-size-list;
+    }
+  }
+  &--article{
+    .content__wrapper{
+      padding-top: 30px;
+      margin-top: 50px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300%;
+        height: 270px;
+        background-color: $blue;
+      }
+    }
+    .content__title{
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 150px;
+      @include mq($from:xs, $until:md){
+        margin-right: 0;
+      }
+    }
+    .page__reviews-section{
+      box-shadow: $box-shadow;
+    }
+  }
 }
 

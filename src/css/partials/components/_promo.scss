@@ -1,35 +1,15 @@
 .promo{
   background-color: $blue;
-  &__inner{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  &__content{
-    flex: 0 0 66.67%;
-    max-width: 66.67%;
-    position: relative;
-    @include mq($from:xs, $until:lg){
-      flex: 0 0 100%;
-      max-width: 100%;
-      text-align: center;
-    }
-  }  
+
   &__form{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    margin: 75px 10px;
     color: $text-color-white;
     @include mq($from:xs, $until:lg){
-      flex: 0 0 100%;
-      max-width: 100%;
       text-align: center;
+      margin: 50px 10px 30px;
     }
 
-    // .form__title{
-    //   background-color: $blue--form;
-    // }
     .form__input{
-      // background-color: $blue--form;
       &::-webkit-input-placeholder{
         color: $text-color-white;         
       }       
@@ -37,40 +17,95 @@
         color: $text-color-white;         
       } 
     }
-    // .help-block{
-    //   background-color: $blue--form;
-    // }
   }
   &__bg{
     position: absolute;
     top: 25px;
     right: 0;
-    height: 600px;
+    height: 580px;
     width: 1500px;
     background-image: url(../img/promo-bg.png);
     background-repeat: no-repeat;
     background-position: 100% 0;
-    background-size: cover;    
+    background-size: cover; 
+    @include mq($from:xs, $until:lg){
+      height: 480px;
+    }  
+  }
+  &__wrapper{
+    position: relative;
+    z-index: 1;
+    font-family: $font-family;
+    padding-right: 25%;
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+  &__title{
+    margin: 180px 0 0;
+    line-height: $line-height-normal;
+    text-transform: uppercase;
+    color: $text-color-white;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    font-size: $font-size-supertitle;
+    @include mq($from:xs, $until:xl){
+      max-width: 500px;
+    }
+    @include mq($from:xs, $until:lg){
+      text-align: center;
+      max-width: inherit;
+      // margin-top: 100px;
+    }
+    @include mq($from:xs, $until:sm){
+      margin-top: 50px;
+      font-size: $font-size-title;
+    }
+  }
+  &__text{
+    margin: 40px 0 40px;
+    font-family: $font-family-light; 
+    font-size: $font-size-promo;
+    color: $text-color-white;
+    // padding-right: 150px;
+    @include mq($from:xs, $until:lg){
+      padding-right: 0;
+    }
+  }
+}
+
+
+
+
+.promo-facts{
+  margin-top: 135px;
+  background-color: $white;
+  @include mq($from:xs, $until:lg){
+    margin-top: 20px;
   }
 
-  &--index{
-    .promo__form{
-      margin: 40px 0 50px;
-      padding-left: 30px; 
-      @include mq($from:xs, $until:lg){
-        margin: 40px 0 0;
-        padding: 0;
-      }   
+  &__item{
+    font-family: $font-family;
+    color: $blue;
+    font-size: $font-size-list;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid $grey;
+    line-height: $line-height-normal;
+    &:last-of-type{
+      border: none;
     }
   }
-  &--about{
-    .promo__form{
-      margin: 80px 0 0;
-      padding-left: 30px; 
-      @include mq($from:xs, $until:lg){
-        margin: 40px 0 0;
-        padding: 0;
-      }   
+  &__block{
+    width: 60%;
+    margin: 0 auto;
+    @include mq($from:xs, $until:lg){
+      width: 100%;
     }
   }
+  .figure{
+    font-family: $font-family--lato;
+    font-size: $font-size-figures;
+  }  
 }

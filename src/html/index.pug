@@ -2,7 +2,20 @@ extends partials/templates/_template.pug
 
 block content
   +b.SECTION.page--front-page
-    include partials/components/_promo--index.pug
+    // Promo -- index
+    +b.SECTION.promo
+      .container
+        .row
+          .col-xs-12.col-lg-8
+            +e.bg
+            +e.wrapper
+              +e.H1.title Комплексное решение таможенных и сертификационных вопросов
+              +e.text 
+                p Специалисты центра сертификации "Ростест" готовы решить любые задачи, связанные с проведением сертификации.
+              +b.A.btn--pale(href="#") Узнать подробнее
+          .col-xs-12.col-lg-4
+            +e.form
+              include partials/components/_form--application.pug 
     // Services
     include partials/components/_services.pug
     // Glossary

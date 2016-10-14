@@ -1,0 +1,54 @@
+.required-docs{
+  margin: 50px 0 80px;
+  position: relative;
+  @include mq($from:xs, $until:lg){
+    margin: 30px 0 0;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    background-image: url(../img/bg-docs.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    @include mq($from:xs, $until:md){
+      content: none;
+    }
+  }
+
+  &__title{
+    text-transform: uppercase;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    margin: 0;
+    font-size: $font-size-title;
+    @include mq($from:xs, $until:lg){
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item{
+    font-family: $font-family-light;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    &:before{
+      content: '';
+      display: inline-block;
+      vertical-align: baseline;
+      margin-right: 30px;
+      @include sprite($s-check);
+    }
+  }
+}
+

@@ -1,0 +1,9 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.subscribe-section             
+  +b.FORM.form--subscribe(action="", method="", id= "subscribe")
+    .form-group.field-email.required
+      +e.INPUT.input(type='email', name='Email', placeholder='Подпишитесь на новости')
+      p.help-block.help-block-error Ошибка заполнения поля
+    .form-group
+      +b.BUTTON.btn--pale(type="submit") Будьте в курсе

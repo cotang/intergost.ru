@@ -1,20 +1,23 @@
 include ../abstracts/bemto/bemto.pug
 
 +b.SECTION.documents-execution
-  +e.inner.container
-    +e.specialist
-      +e.H2.title Не нашли нужный вам документ? Обратитесь к нашим специалистам
-      +b.manager
-        +e.wrapper
-          +e.img
-            img(src="img/photo-manager.jpg", alt="manager", title="manager")
-          +e.name Гузель Аманова
-        +e.info
-          +e.link--tel(href="tel:+78881112233", target="_blank") +7 (888) 999-44-66
-          +e.link--skype(href="skype:guzelamanova", target="_blank") guzelamanova
-          +e.link--icq(href="http://www.icq.com/whitepages/cmd.php?uin=555666777&action=message", target="_blank") 555-666-777
-          +b.A.btn--pale(href="#") Написать сообщение
-    +b.self-execution
-      +e.H3.title Хотите оформить документы самостоятельно?
-      +b.A.btn--pale(href="#") Здесь мы расскажем как это сделать
+  .container
+    .row
+      .col-xs-12.col-lg-6
+        +e.specialist
+          +e.H2.title Не нашли нужный вам документ? Обратитесь к нашим специалистам
+          +b.manager
+            +e.wrapper
+              +e.img
+                img(src="img/photo-manager.jpg", alt="manager", title="manager")
+              +e.name Гузель Аманова
+            +e.info
+              +e.link--tel(href="tel:+78881112233", target="_blank") +7 (888) 999-44-66
+              +e.link--skype(href="skype:guzelamanova", target="_blank") guzelamanova
+              +e.link--icq(href="http://www.icq.com/whitepages/cmd.php?uin=555666777&action=message", target="_blank") 555-666-777
+              +b.A.btn--pale(href="#") Написать сообщение
+      .col-xs-12.col-lg-5.offset-lg-1
+        +b.self-execution
+          +e.H3.title Хотите оформить документы самостоятельно?
+          +b.A.btn--pale(href="#") Здесь мы расскажем как это сделать
 

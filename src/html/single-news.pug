@@ -1,0 +1,82 @@
+extends partials/templates/_template.pug
+include partials/abstracts/mixins/_news-section-item.pug
+
+block content
+  +b.SECTION.page--single-news
+    // News
+    +b.SECTION.news
+      +e.choise
+        .container
+          .row
+            .col-xs-12.col-lg-10.offset-lg-1
+              +e.H2.title Новости
+              +b.choise--news
+                +e.text Выберите тему:
+                +e.UL.list 
+                  +e.item
+                    +e.link(href="#") Название темы
+                  +e.slash /
+                  +e.item
+                    +e.link(href="#") Тема
+                  +e.slash /
+                  +e.item 
+                    +e.link(href="#") Длинное название темы
+                  +e.slash /
+                  +e.item 
+                    +e.link(href="#") Очень очень очень длинное название темы
+                  +e.slash /
+                  +e.item 
+                    +e.link(href="#") Тема
+                  +e.slash /   
+                  +e.item 
+                    +e.link(href="#") Название темы
+                  +e.slash /
+                  +e.item 
+                    +e.link(href="#") Название темы
+                  +e.slash /
+                  +e.item 
+                    +e.link(href="#") Название темы
+      +b.SECTION.content
+        .container
+          .row
+            .col-xs-12.col-lg-8.push-lg-4
+              +e.wrapper
+                +e.H1.title Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
+                +b.date 11 июня, 2015
+                +e.text
+                  p Тiet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron
+                  ul
+                    li Het standaard stuk van Lorum Ipsum wat sinds de 16e
+                    li Уeuw wordt gebruikt is hieronder, voor wie er interesse
+                    li Kn heeft, weergegeven
+                  p Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissanceHet standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum"
+            .col-xs-12.col-lg-4.pull-lg-8
+              +e.img
+                img(src="img/news/news1.jpg", alt="news1", title="news2")
+              +b.other-news
+                +e.H3.title Другие новости
+                +newsSectionItem("Оборот табачных изделий будет регулироваться новым стандартом", "11 июня, 2015", "news2.jpg", "news2")
+                +newsSectionItem("Мясо и молоко теперь имеют свой собственный технический регламент Таможенного Союза", "11 июня, 2015", "news3.jpg", "news3")
+                +newsSectionItem("Стартовало общественное обсуждение изменений в перечне стандартов к ТР ТС 'О безопасности колесных транспортных средств'", "11 июня, 2015", "news4.jpg", "news4") 
+
+              // Subscribe section
+              include partials/components/_subscribe-section.pug
+
+              +b.all-news
+                a(href="page-news.html") Вернуться к списку новостей
+
+    // Questions section
+    include partials/components/_questions-section.pug
+
+
+
+
+
+
+
+ 
+
+
+
+
+

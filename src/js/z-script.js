@@ -46,8 +46,8 @@ jQuery(document).ready(function($){
     $('.search').toggle();
   });               
 
-  /* галерея клиентов */
-  $('.clients__gallery').slick({
+  /* галерея логотипов клиентов */
+  $('.clients-section__gallery').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -77,8 +77,8 @@ jQuery(document).ready(function($){
     infinite: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 5,
+    autoplaySpeed: 5000,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '0',
@@ -169,19 +169,19 @@ jQuery(document).ready(function($){
   $('.gratitude__slide').click( function(e){ 
     e.preventDefault(); 
     $('body').css({"overflow":"hidden"});   
-    $('.overlay').show();
-    $(this).find('.gratitude__modal').clone().appendTo($('.overlay'))
+    $('.modal').show();
+    $(this).find('.gratitude__modal').clone().appendTo($('.modal'))
     .show()
     .animate({opacity: 1}, 200); 
   });
   /* Close the modal window */
-  $('.overlay').click( function(){ 
+  $('.modal').click( function(){ 
     $('body').css({"overflow":"auto"});
     $(this).find('.gratitude__modal')
       .animate({opacity: 0}, 200,  
         function(){
           $(this).hide();
-          $('.overlay').fadeOut(400);
+          $('.modal').fadeOut(400);
         }
       );
   }); 
@@ -192,28 +192,38 @@ jQuery(document).ready(function($){
     $('.reviews__form').toggle();
   }); 
 
-  // /* Form in the modal window */
-  // $('.btn').click( function(e){
-  //   e.preventDefault(); 
-  //   var suffix = $(this).data("form"); 
-  //   var overlay = $('.overlay');
-  //   $('body').css({"overflow":"hidden"});   
-  //   $(overlay).show();
-  //   var formClass = '.form--' + suffix;
-  //   $(overlay).find(formClass).fadeIn();    
-  // });
-  // /* Close the modal window */
-  // $('.overlay').click( function(){ 
-  //   $('body').css({"overflow":"auto"});
-  //   $(this).find(".form").fadeOut();
-  //   $('.overlay').fadeOut(400);
-  // }); 
+  /* Form in the modal window */
+  $('.btn[data-form]').click( function(e){
+    e.preventDefault(); 
+    var suffix = $(this).data("form"); 
+    $('body').css({"overflow":"hidden"});   
+    $('.modal').show();
+    var formClass = '.form--' + suffix;
+    $('.modal').find(formClass).fadeIn();
+  });
+  /* Close the modal window */
+  $('.modal__overlay, .modal__close').click( function(e){ 
+    e.preventDefault();
+    $('body').css({"overflow":"auto"});
+    $(this).closest('.modal').find(".form").fadeOut();
+    $(this).closest('.modal').fadeOut(400);
+  });
 
-  // /* открывание ответа по ссылке "читать далее" */
-  // $('.question__details').click(function(e) {
-  //     e.preventDefault();
-  //     $(this).closest('.question').find('.question__answer').toggle();      
-  // });
+  /* Форма reviews по клику на "Оставить отзыв" */
+  $('.example__link').click(function(e){
+    e.preventDefault();
+    $(this).closest('.example').find('.example__text-block').slideToggle();
+  }); 
+
+  /* плавный скролл в контактах */
+  $('.city-choise__link').click(function(e){
+      e.preventDefault();
+      var el = $(this).attr('href');
+      $('body').animate({
+      scrollTop: $(el).offset().top}, 500);
+      return false;
+  });
+
 
 });
 

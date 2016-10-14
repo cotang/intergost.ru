@@ -1,0 +1,99 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--russian
+    // Promo -- russian
+    +b.SECTION.promo
+      .container
+        .row
+          .col-xs-12.col-lg-8
+            +e.bg
+            +e.wrapper
+              +e.H1.title Вы являетесь российским производителем и Вам нужно оформить документы на продукцию?
+              +e.text 
+                p С нами вы ускорите и упростите выполнение этой задачи в разы.  Мы возьмем на себя самое сложное и сделаем свою работу в срок и качественно, а вам для этого не потребуется даже выйти из своего офиса
+          .col-xs-12.col-lg-4
+            +e.form
+              include partials/components/_form--application.pug  
+
+    // Russian manufactorer
+    +b.SECTION.russian
+      .container
+        .row
+          .col-xs-12.col-lg-3
+            +e.H2.title Российский производитель
+          .col-xs-12.col-lg-9
+            +e.content
+              +b.strategy     
+                +e.UL.list
+                  +e.item 
+                    +e.number
+                      span 1
+                      +e.arrow
+                    +e.text 
+                      p Разработка и регистрация нормативно-технической (ссылка на статью) и конструкторской (ссылка на статью) документации
+                  +e.item
+                    +e.number 
+                      span 2
+                      +e.arrow
+                    +e.text 
+                      p Определение перечня стандартов и требований (ссылка на перечни законов), на соответствие которым необходимо оформить разрешительные документы для законной реализации продукции в РФ или в странах ТС.        
+                  +e.item 
+                    +e.number 
+                      span 3
+                      +e.arrow
+                    +e.text 
+                      p Определение стоимости и сроков оформления разрешительных документов.
+                  +e.item
+                    +e.number 
+                      span 4
+                      +e.arrow
+                    +e.text 
+                      p Формирование пакета документов, необходимых для оформления разрешительной документации.        
+                  +e.item 
+                    +e.number 
+                      span 5
+                      +e.arrow
+                    +e.text 
+                      p Подача документов на оформление и согласование макета (черновика) разрешительных документов.
+                  +e.item
+                    +e.number 
+                      span 6
+                      +e.arrow
+                    +e.text 
+                      p Вывод разрешительных документов на бланк и их государственная регистрация.
+                  +e.item
+                    +e.number 
+                      span 7
+                      +e.arrow
+                    +e.text 
+                      p Скан разрешительных документов высылается вам на электронную почту. Оригиналы документов наш курьер отдаст вам в руки.
+                +e.buttons-wrapper
+                  +b.A.btn--pale(href="#") Если вы планируете импорт
+                  +b.A.btn--pale(href="#") Если вы планируете экспорт
+              
+    // Advantages
+    +b.SECTION.advantages--russian
+      +e.inner.container
+        +e.H2.title Преимущества сертификации
+        include partials/components/_advantages-blocks.pug
+
+    // Clients section
+    include partials/components/_clients-section.pug
+    // Faq
+    include partials/components/_faq.pug
+    // Questions section
+    include partials/components/_questions-section.pug
+    // Contacts section
+    include partials/components/_contacts-section.pug
+
+
+
+
+
+
+
+
+
+
+

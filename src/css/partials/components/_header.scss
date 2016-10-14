@@ -39,24 +39,27 @@
   }
   &__block{
     &--btn{
-      flex: 0 0 30%;
-      max-width: 30%;
+      flex: 0 0 35%;
+      max-width: 35%;
       text-align: right;
       position: relative;
       @include mq($from:xs, $until:md){
         flex: 0 0 100%;
         max-width: 200px;
-        margin: 10px auto;
+        margin: 20px auto 10px;
       }
     }
     &--contacts{
-      flex: 0 0 70%;
-      max-width: 70%;
+      flex: 0 0 65%;
+      max-width: 65%;
       padding-right: 40px; 
       display: flex;
       flex-wrap: wrap;
       align-items: flex-end;
       justify-content: space-between;
+      @include mq($from:md, $until:lg){
+        padding-right: 20px;
+      }
       @include mq($from:xs, $until:md){
         flex: 0 0 100%;
         max-width: 100%;
@@ -111,6 +114,9 @@
     &--tel{
       font-size: 1.25em;
       font-weight: $bold;
+      @include mq($from:md, $until:lg){
+        font-size: 1.1em;
+      }
     }
   }
 

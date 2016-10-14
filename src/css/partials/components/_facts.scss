@@ -37,7 +37,8 @@
   }
   &__text{
     line-height: 1.5;
-    font-weight: $light;
+    font-family: $font-family-light;
+    font-weight: normal;
     font-size: $font-size-promo;
     text-transform: uppercase;
     color: $text-color-white;
@@ -47,27 +48,19 @@
       font-size: $font-size-list;
     } 
     span{
-      padding: 0 5px;
-      font-style: italic;
+      // font-style: italic;
       font-size: 2em;
       font-weight: $bold;
     }
   }
 
-  &--about{
-    .facts__list{
-      @include mq($from:xs, $until:lg){
-        margin: 60px auto 0;
-      }      
-    }    
-  }
 
   &--index{
     .facts__list{
       margin: 60px auto 0;
     }
     .facts__item{
-      padding-right: 30px;
+      padding-right: 20px;
       padding-bottom: 20px;
       padding-top: 30px;
       &:nth-of-type(1),

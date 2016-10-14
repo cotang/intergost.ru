@@ -1,14 +1,17 @@
 .reviews-section{
-  margin-top: 70px;
+  margin-top: 65px;
   margin-bottom: 30px;
   text-align: center;
-
+  @include mq($from:xs, $until:lg){
+    margin-top: 50px;
+  }
+  
   &__title{
     text-transform: uppercase;
-    font-family: $font-family;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
     margin: 25px 0 20px;
     font-size: $font-size-title;
-    font-weight: $bold;
   }
   &__gallery{
     margin: 0 150px;
@@ -22,12 +25,22 @@
       padding: 0 20px;
     }
   }
+
+  &--narrow{
+    margin-top: 0;
+    .reviews-section__title{
+      margin-top: 0;     
+    }
+    .reviews-section__gallery{
+      margin: 0;
+      padding: 0 40px;      
+    }
+  }
 }
 .review-slide{
   width: 100%;
   &__text{
     font-family: $font-family--italic;
-    font-style: italic;
     font-size: $font-size-bigger;
   }
   &__author{

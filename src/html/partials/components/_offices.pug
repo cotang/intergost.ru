@@ -1,0 +1,17 @@
+include ../abstracts/mixins/_office.pug
+include ../abstracts/bemto/bemto.pug
+
+- var spb = [{title : 'Санкт-Петербург', id: 'spb', address: 'Станции метро: "Лиговский проспект" / "Площадь Восстания", Лиговский пр., д. 87, 6 эт., оф. 628', email: 'info@intergost.ru', fax: '+7 (812) 313-93-63', tel: '+7 (812) 928-60-08', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9865911230468!2d30.363821316222204!3d59.93236466956664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631bc96367907%3A0x91ac31eeac4480e5!2zMi3RjyDQodC-0LLQtdGC0YHQutCw0Y8g0YPQuy4sIDcsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTEwMzY!5e0!3m2!1sru!2sru!4v1471293893511'}] 
+- var kazan = [{title : 'Казань', id: 'kazan', address: 'ул. Чернышевского, д. 30б', email: 'kazan@intergost.ru', tel: '+7 (843) 258-53-02', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.9918169724515!2d49.104916316102404!3d55.793379996328916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead22ab1a54ad%3A0xf28f0b852c006ae0!2z0J_RgNCw0LLQvi3QkdGD0LvQsNGH0L3QsNGPINGD0LsuLCAxMywg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAxMTE!5e0!3m2!1sru!2sru!4v1472219939353'}] 
+- var nn = [{title : 'Нижний Новгород', id: 'nn', address: 'ул. Бекетова, д. 3б', email: '52@intergost.ru', tel: '+7 (831) 414-41-30', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.2624317307195!2d43.9858408161165!3d56.29078255783782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d574e48d2b01%3A0x648b40fc0c129d31!2z0YPQuy4g0JHQtdC60LXRgtC-0LLQsCwgM9CRLCDQndC40LbQvdC40Lkg0J3QvtCy0LPQvtGA0L7QtCwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8g0L7QsdC7LiwgNjAzMDU3!5e0!3m2!1sru!2sru!4v1472220164437'}]
+- var rostov = [{title : 'Ростов-на-Дону', id: 'rostov', address: 'ул. 50-летия Ростсельмаша, д. 1/52', email: '61@intergost.ru', tel: '+7 (863) 294-98-12', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10839.154331991134!2d39.699196344726154!3d47.22071889015037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YDQvtGB0YLQvtCyINC90LAg0LTQvtC90YMg0JHRg9C00LXQvdC90L7QstGB0LrQuNC5INC_0YAuLCDQtC4gNjIvMg!5e0!3m2!1sru!2sru!4v1472220380117'}]
+- var minsk = [{title : 'Минск', id: 'minsk', address: 'ул. Мясникова, д.70', email: 'minsk@intergost.ru', fax: '+375 (33) 606-32-18', tel: '+375 (29) 606-32-18', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6844.737526051752!2d27.540002875463802!3d53.894639128897914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe686cb4a5b%3A0xdd11da662ed6684f!2z0YPQuy4g0JzRj9GB0L3QuNC60L7QstCwIDcwLCDQnNC40L3RgdC6LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1472221172326'}] 
+
+
++office(spb)
++office(kazan)
++office(nn)
++office(rostov)
++office(minsk)
+
+

@@ -22,7 +22,7 @@ include ../abstracts/bemto/bemto.pug
         +e.block--btn 
           +b.A.btn--whatsapp(href="tel:+78123350511", target="_blank")
           +b.A.btn--viber(href="tel:+78123350511", target="_blank")
-          +b.A.btn--header(href="#") Узнать стоимость
+          +b.A.btn--header(href="#", data-form="application") Узнать стоимость
       // Nav
       +b.NAV.nav--header
         +e.hamburger
@@ -30,15 +30,15 @@ include ../abstracts/bemto/bemto.pug
             span
         +e.UL.list
           +e.item 
-            +e.A.link(href="page.html") Услуги
+            +e.A.link(href="page-services.html") Услуги
           +e.item 
-            +e.A.link(href="page.html") О компании
+            +e.A.link(href="page-about.html") О компании
           +e.item
-            +e.A.link(href="page.html") Изготовителям РФ
+            +e.A.link(href="page-russian.html") Изготовителям РФ
           +e.item
-            +e.A.link(href="page.html") Импортерам
+            +e.A.link(href="page-import.html") Импортерам
           +e.item
-            +e.A.link(href="page.html") Экспортерам
+            +e.A.link(href="page-export.html") Экспортерам
           +e.item
             +e.A.link(href="page-contacts.html") Контакты
           +e.item

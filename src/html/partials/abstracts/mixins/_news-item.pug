@@ -1,9 +1,14 @@
-mixin newsItem(heading, date, img, alt)
-  +b.ARTICLE.news-section-item
-    +e.img
-      img(src= "img/news/" + img alt= alt title= alt)
-    +e.wrapper
-      +e.H3.heading
-        a(href="single-news.html") #{heading}
-      +e.date #{date} 
-       
+mixin newsItem(heading, date, img, alt, text)
+  +b.ARTICLE.news-item
+    .row              
+      .col-xs-12.col-lg-3.offset-lg-1
+        +e.img
+          img(src= "img/news/" + img alt= alt title= alt)
+      .col-xs-12.col-lg-7
+        +e.wrapper
+          +e.H2.heading
+            a(href="single-news.html") #{heading}
+          +e.text 
+            p #{text} 
+          +b.date #{date} 
+

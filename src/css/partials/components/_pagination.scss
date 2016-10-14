@@ -3,6 +3,9 @@
   color: $text-color;
   margin-top: 40px;
   margin-bottom: 40px;
+  @include mq($from:xs, $until:lg){
+    margin: 10px 0;
+  }
 
   &__prev{
     margin-right: 10px;
@@ -19,7 +22,7 @@
   &__number{
     display: inline-block;
     padding: 5px 10px;
-    color: $text-color;
+    color: $grey-darker;
     &:hover, &:focus, &:active{
       color: $blue;
     }

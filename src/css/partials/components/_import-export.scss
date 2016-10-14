@@ -1,0 +1,246 @@
+.import, .export, .russian{
+  margin-top: 110px;
+  position: relative;
+  @include mq($from:xs, $until:lg){
+    margin-top: 30px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 380px;
+    transform: translateX(-50%);
+    background-image: url(../img/bg-port.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &__title{
+    margin: 190px 0 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: $text-color-white;
+    text-transform: uppercase;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    font-size: $font-size-title;
+    @include mq($from:xs, $until:lg){
+      margin-top: 60px;
+    }
+  }
+  &__content{
+    background-color: $white;
+    box-shadow: $box-shadow;
+  }
+}
+
+.strategy{
+  &__list{
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 20px;
+    margin: 55px 0 0;
+    list-style-type: none;
+    @include mq($from:xs, $until:lg){
+      margin-top: 30px;
+    }    
+  }
+  &__item{
+    display: flex;
+    align-items: stretch;
+  }
+  &__number{
+    text-align: center;
+    flex: 0 0 110px;
+    max-width: 110px;
+    font-size: $font-size-list;
+    position: relative;
+    @include mq($from:xs, $until:sm){
+      flex: 0 0 70px;
+      max-width: 70px;
+    }
+
+    span{
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      background-color: $violet;
+      border-radius: 50%;
+      color: $text-color-white;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__arrow{
+    position: absolute;
+    z-index: 1;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: $blue;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      background-color: $blue;
+      width: 1px;
+      height: 10px;
+    }
+    &:before{
+      right: 2px;
+      transform: rotate(-30deg);
+    }
+    &:after{
+      left: 2px;
+      transform: rotate(30deg);
+    }
+  }
+  &__text{
+    padding-bottom: 25px;
+    p {
+      margin: 0;
+    }
+  }
+
+  &__buttons-wrapper{
+    margin-left: 110px;
+    padding: 20px 0 40px;
+    @include mq($from:xs, $until:sm){
+      margin-left: 70px;
+
+    }
+    .btn{
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.example{
+  &__title{
+    margin-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    font-size: $font-size-title;
+    @include mq($from:xs, $until:sm){
+      margin-left: 70px;
+    }
+  }
+  &__text-block{
+    position: relative;
+  }
+  &__upperline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-darker;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 110px;
+      top: -14px;
+      background-color: $white;
+      border-right: 1px solid $grey-darker;
+      border-bottom: 1px solid $grey-darker;
+      transform: rotate(45deg);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 119px;
+      top: 0;
+      background-color: $white;
+      border-right: 3px solid $black;
+      border-bottom: 3px solid $black;
+      transform: rotate(45deg);      
+    }
+  }
+  &__lowerline{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-darker;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 110px;
+      bottom: -14px;
+      background-color: $white;
+      border-left: 1px solid $grey-darker;
+      border-top: 1px solid $grey-darker;
+      transform: rotate(45deg);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 119px;
+      bottom: 0;
+      background-color: $white;
+      border-left: 3px solid $black;
+      border-top: 3px solid $black;
+      transform: rotate(45deg);      
+    }
+  }
+  &__text{
+    margin-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    @include mq($from:xs, $until:sm){
+      margin-left: 70px;
+    }
+    ul{
+      @include mq($from:xs, $until:sm){
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.additional{
+  margin-left: 110px;
+  padding-bottom: 50px;
+  &__title{
+    margin: 40px 0; 
+    text-transform: uppercase;
+    font-family: $font-family-extrabold;
+    font-weight: normal;
+    font-size: $font-size-title;
+  }
+  &__list{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item{
+    font-weight: bold;
+    margin-bottom: 15px;
+    &:before{
+      content: '';
+      display: inline-block;
+      @include sprite($s-check-big);
+      margin-right: 10px;
+    }
+  }
+}

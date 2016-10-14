@@ -68,6 +68,7 @@ $black:                       #000000;
 
 $blue:                        #366ba6;
 $blue--form:                  #3166a1;
+$violet:                      #6c7fb4;
 
 $orange:                      #ff7926;
 
@@ -103,8 +104,13 @@ $link-color-white--hover:     darken($link-color-white, 20%);
 //  Typography
 //------------------------------------------------------------------------------
 
-$font-family:                   Raleway, Roboto, Helvetica, Arial, sans-serif;
-$font-family--roboto:           Roboto, Helvetica, Arial, sans-serif;
+$font-family:                   'Raleway Regular', Roboto, Helvetica, Arial, sans-serif;
+$font-family-bold:              'Raleway Bold', Roboto, Helvetica, Arial, sans-serif;
+$font-family-extrabold:         'Raleway Extrabold', Roboto, Helvetica, Arial, sans-serif;
+$font-family-light:             'Raleway Light', Roboto, Helvetica, Arial, sans-serif;
+
+$font-family--roboto:           'Roboto', Helvetica, Arial, sans-serif;
+$font-family--roboto-light:     'Roboto Light', Helvetica, Arial, sans-serif;
 $font-family--italic:           'Open Sans Italic', 'Roboto Italic', Helvetica, Arial, sans-serif;
 $font-family--lato:             'Lato Black Italic', 'Roboto Italic', Helvetica, Arial, sans-serif;
 
@@ -131,10 +137,11 @@ $font-size-footer-menu:       15px;
 
 
 $line-height:                 1.71;
+$line-height-normal:          1.43;
 
 $light:                       200;
 $regular:                     400;
 $semibold:                    600;
 $bold:                        700;
 
-
+$box-shadow:                  0px 2px 2px 0px rgba(0, 0, 0, 0.22);

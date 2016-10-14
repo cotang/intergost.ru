@@ -1,0 +1,94 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--article
+    // Content
+    +b.SECTION.content
+      .container
+        .row
+          .col-xs-12.col-lg-8.push-lg-3.offset-lg-1            
+            +e.H1.title Сертификат соответствия требованиям Таможенного Союза
+            +e.download 
+              a(target="_blank" href="#") Скачать статью
+            +e.wrapper
+              +e.text
+                h2 Заголовок второго уровня
+                p Тiet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron
+                ul
+                  li Het standaard stuk van Lorum Ipsum wat sinds de 16e
+                  li Уeuw wordt gebruikt is hieronder, voor wie er interesse
+                  li Kn heeft, weergegeven
+                p Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissanceHet standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum 
+          .col-xs-12.col-md-6.offset-md-3.col-lg-3.pull-lg-9.offset-lg-0
+            +e.img
+              img(src="img/cert.jpg", alt="cert1", title="cert1")
+            +e.btn
+              +b.A.btn(href="#") Рассчитать стоимость
+            +b.other-docs
+              +e.H3.title С этим документом также оформляют
+              +e.UL.list
+                +e.item 
+                  +e.A.link(href="page.html") Сертификаты и декларации ГОСТ
+                +e.item 
+                  +e.A.link(href="page.html") Отказные письма (обычные и ВНИИС)
+                +e.item 
+                  +e.A.link(href="page.html") Пожарные сертификаты и декларации
+
+    // Required docs
+    +b.SECTION.required-docs
+      .container
+        .row
+          .col-xs-12.col-lg-4
+            +e.H2.title Какие документы необходимо предъявить
+          .col-xs-12.col-lg-8
+            +e.UL.list
+              +e.item Заявка
+              +e.item Свидетельство ИНН, коды, статистики
+              +e.item Карточка контрагента (реквизиты)
+              +e.item Контракт на поставку
+              +e.item Описание товара, оборудования (основные характеристики)
+    +e.block
+      .container
+        .row
+          +e.reviews-section.col-xs-12.col-lg-4
+            +b.SECTION.reviews-section--narrow
+              +e.H2.title 
+                a(href="page-reviews.html") Отзывы
+              +e.gallery
+                +b.ARTICLE.review-slide
+                  +e.text
+                    p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
+                  +e.author
+                    p ООО НТКФ "СИ-НОРД"
+                +b.ARTICLE.review-slide
+                  +e.text
+                    p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
+                  +e.author
+                    p ООО НТКФ "СИ-НОРД"
+                +b.ARTICLE.review-slide
+                  +e.text
+                    p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
+                  +e.author
+                    p ООО НТКФ "СИ-НОРД"
+
+          .col-xs-12.col-lg-7.offset-lg-1
+            +b.advantages-blocks--narrow.container
+              +e.H2.title Наши преимущества
+              .row
+                +e.item.col-xs-12.col-lg-6 
+                  +e.text Личный менеджер для вас
+                +e.item.col-xs-12.col-lg-6 
+                  +e.text Возможность удаленного оформления (все по e-mail)        
+                +e.item.col-xs-12.col-lg-6  
+                  +e.text Бесплатная доставка по всему миру
+                +e.item.col-xs-12.col-lg-6 
+                  +e.text Работаем со всеми городами России и зарубежья
+
+    // Questions section
+    include partials/components/_questions-section.pug
+    // Contacts section
+    include partials/components/_contacts-section.pug
+
+
+
+
