@@ -21,12 +21,6 @@ jQuery(document).ready(function($){
                                                   // or you can do it on some other event
   });
 
-
-  // $('.how-we-work').onScreen({  
-  //   $(this).find('.how-we-work__item:after').animate({right, 0}, 3000);
-  // });
-
-
   /* Открывание всех логотипов клиентов */
   $('.clients__more').click(function(e){
     e.preventDefault();
@@ -168,15 +162,15 @@ jQuery(document).ready(function($){
   /* Gratitude in the modal window */
   $('.gratitude__slide').click( function(e){ 
     e.preventDefault(); 
-    $('body').css({"overflow":"hidden"});   
+    $('body').css({"overflow-y":"hidden"});   
     $('.modal').show();
     $(this).find('.gratitude__modal').clone().appendTo($('.modal'))
     .show()
     .animate({opacity: 1}, 200); 
   });
   /* Close the modal window */
-  $('.modal').click( function(){ 
-    $('body').css({"overflow":"auto"});
+  $('.modal__overlay').click( function(){ 
+    $('body').css({"overflow-y":"auto"});
     $(this).find('.gratitude__modal')
       .animate({opacity: 0}, 200,  
         function(){
@@ -196,7 +190,7 @@ jQuery(document).ready(function($){
   $('.btn[data-form]').click( function(e){
     e.preventDefault(); 
     var suffix = $(this).data("form"); 
-    $('body').css({"overflow":"hidden"});   
+    $('body').css({"overflow-y":"hidden"});   
     $('.modal').show();
     var formClass = '.form--' + suffix;
     $('.modal').find(formClass).fadeIn();
@@ -204,7 +198,7 @@ jQuery(document).ready(function($){
   /* Close the modal window */
   $('.modal__overlay, .modal__close').click( function(e){ 
     e.preventDefault();
-    $('body').css({"overflow":"auto"});
+    $('body').css({"overflow-y":"auto"});
     $(this).closest('.modal').find(".form").fadeOut();
     $(this).closest('.modal').fadeOut(400);
   });
@@ -216,7 +210,7 @@ jQuery(document).ready(function($){
   }); 
 
   /* плавный скролл в контактах */
-  $('.city-choise__link').click(function(e){
+  $('.choise--city .choise__link').click(function(e){
       e.preventDefault();
       var el = $(this).attr('href');
       $('body').animate({

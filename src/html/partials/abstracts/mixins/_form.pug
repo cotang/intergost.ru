@@ -7,7 +7,7 @@ mixin form(items)
   each item in items
     +b.SECTION(class= 'form--' + item.name)
       form(action='', method='', id= item.id)
-        +e.A.close(href='#') Закрыть
+        //- +e.A.close(href='#') Закрыть
         +e.H3.title #{item.title}
 
         if item.application
