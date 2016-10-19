@@ -65,11 +65,10 @@ jQuery(document).ready(function($){
     ]
   });
 
-
   /* галерея "рабочих будней" */
   $('.daily-working__gallery').slick({
     infinite: true,
-    arrows: false,
+    // arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 4,
@@ -217,6 +216,40 @@ jQuery(document).ready(function($){
       scrollTop: $(el).offset().top}, 500);
       return false;
   });
+
+  // var waypoint1 = new Waypoint({
+  //   element: document.getElementById('arrow--grey'),
+  //   handler: function() {
+  //     document.getElementById('arrow--grey').style.right = '0';
+  //   },
+  //   offset: '50%'
+  // })
+
+  // var waypoint2 = new Waypoint({
+  //   element: document.getElementById('arrow--white'),
+  //   handler: function() {
+  //     document.getElementById('arrow--white').style.right = '0';
+  //   },
+  //   offset: '50%'
+  // })
+
+  var arrows = document.querySelectorAll('.how-we-work__arrow');
+  function handler(direction) {
+    for (var i=0;i<arrows.length;i++){
+      arrows[i].style.right = '0';
+    }  
+  }
+  arrows.forEach(function(element) {
+    new Waypoint({
+      element: element,
+      handler: handler,
+      offset: '50%',
+      group: 'arrows'
+    })
+  })
+
+
+
 
 
 });

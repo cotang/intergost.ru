@@ -54,20 +54,11 @@
         padding-left: 50px;
         padding-right: 50px;
       }
-      &:after{
-        content: "";
-        position: absolute;
-        z-index: 3;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        border: 112px solid transparent; 
-        border-left: 100px solid $white;
-        @include mq($from:xs, $until:xl){
-          content: none;
-        }
-      }
 
+      .how-we-work__arrow{
+        z-index: 3;
+        border-left: 100px solid $white;
+      }
       .how-we-work__number{
         background-color: $grey;
       }
@@ -87,18 +78,9 @@
         padding-left: 50px;
         padding-right: 50px;
       }
-      &:after{
-        content: "";
-        position: absolute;
+      .how-we-work__arrow{
         z-index: 1;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        border: 112px solid transparent; 
         border-left: 100px solid $grey;
-        @include mq($from:xs, $until:xl){
-          content: none;
-        }
       }
       .how-we-work__icon{
         @include sprite($s-work-mail); 
@@ -128,6 +110,18 @@
       }      
     }
   }
+  &__arrow{
+    position: absolute;
+    top: 0;
+    // right: 0;
+    right: 100px;
+    @include transition();
+    transform: translateX(100%);
+    border: 112px solid transparent;
+    @include mq($from:xs, $until:xl){
+      display: none;
+    }    
+  }
   &__number{
     position: absolute;
     left: 50%;
@@ -139,7 +133,7 @@
     display: inline-block;
     width: 55px;
     height: 55px;
-    background-color: $white;
+    background-color: $paler;
     span{
       display: block;
       width: 55px;
@@ -180,8 +174,4 @@
     font-size: $font-size-list;
     text-align: left;
   }
-
-  // &.onScreen{
-    
-  // }
 }

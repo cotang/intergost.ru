@@ -11,34 +11,34 @@ mixin form(items)
         +e.H3.title #{item.title}
 
         if item.application
+          .form-group.field-email-tel.required
+            +e.INPUT.input(type='text', name='Email/телефон', placeholder='Ваш e-mail или телефон*')
+            p.help-block.help-block-error Ошибка заполнения поля формы 
           .form-group.field-production.required
             +e.INPUT.input(type='text', name='Продукт/услуга', placeholder='Ваш продукт или услуга*') 
             p.help-block.help-block-error Ошибка заполнения поля формы
           .form-group.field-name.required
             +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-email-tel.required
-            +e.INPUT.input(type='text', name='Email/телефон', placeholder='Ваш e-mail или телефон*')
-            p.help-block.help-block-error Ошибка заполнения поля формы           
+            p.help-block.help-block-error Ошибка заполнения поля формы          
 
-        if item.question
-          .form-group.field-name.required.has-error
-            +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-email.required.has-success
-            +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-question.required
-            +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Ваш вопрос*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
+        //- if item.question
+        //-   .form-group.field-name.required.has-error
+        //-     +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        //-   .form-group.field-email.required.has-success
+        //-     +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        //-   .form-group.field-question.required
+        //-     +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Ваш вопрос*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
 
-        if item.call
-          .form-group.field-name.required.has-error
-            +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-tel.required.has-success
-            +e.INPUT.input(type='tel', name='Телефон', placeholder='Контактный телефон*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
+        //- if item.call
+        //-   .form-group.field-name.required.has-error
+        //-     +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        //-   .form-group.field-tel.required.has-success
+        //-     +e.INPUT.input(type='tel', name='Телефон', placeholder='Контактный телефон*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
 
         if item.review
           .form-group.field-name.required.has-error

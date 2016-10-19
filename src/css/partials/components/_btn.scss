@@ -13,6 +13,7 @@
   &:hover, &:focus, &:active{
     color: $text-color-white;
     text-decoration: none;
+    background-color: lighten($orange, 10%);
   }
   &--header{
     padding: 20px 0; 
@@ -23,12 +24,16 @@
   }
   &--blue{
     background-color: $blue;
+    &:hover, &:focus, &:active{
+      background-color: lighten($blue, 10%);
+    }
   }
   &--pale{
     background-color: $pale;
     color: $text-color;
     &:hover, &:focus, &:active{
-      color: $blue;
+      color: $text-color;
+      background-color: darken($pale, 10%);
     }
   }
 
@@ -59,11 +64,31 @@
   right: 30px;
   padding: 3px 10px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
-  background-color: $grey; 
+  background-color: $grey;
+  transition: none; 
   &:after{
     content: "";
     margin-left: 5px;
     display: inline-block;
     @include sprite($s-up); 
   }
+
+  &:hover, &:focus, &:active{
+    color: $text-color-white;
+    background-color: $blue;
+    &:after{
+      @include sprite($s-up-white); 
+    }
+  }
+}
+
+.anchor{
+  top: -50px;
+  width: 100%;
+  display: block;
+  cursor: default;
+  position: absolute; 
+  @include mq($from:xs, $until:lg){
+    top: -30px;
+  } 
 }

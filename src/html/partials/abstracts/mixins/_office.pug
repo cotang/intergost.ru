@@ -1,6 +1,7 @@
 mixin office(items)
   each item in items
-    +b.SECTION.contacts-section(id= item.id)
+    +b.SECTION.contacts-section
+      +b.anchor(href="javascript:void(0);", id= item.id)
       .container
         +e.H2.title #{item.title}
         +e.UL.list
