@@ -46,24 +46,24 @@
       <div class="header__inner container">
         <div class="header__logo">
           <!-- Logo-->
-          <a class="logo" href="index.html">
-            <img src="img/logo-header.png" alt="logo" title="logo">
+          <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+            <img src="img/logo-header.png" alt="logo" title="logo" itemprop="logo">
           </a>
         </div>
         <div class="header__wrapper">
-          <div class="header__info">
+          <div class="header__info" itemscope itemtype="http://schema.org/Place">
             <div class="header__block header__block--contacts">
-              <div class="header__address-wrapper">
+              <div class="header__address-wrapper" itemprop="address">
                 <div class="header__line">Санкт-Петербург</div>
                 <div class="header__line">Лиговский проспект, 11</div>
               </div>
               <div class="header__time-wrapper">
                 <div class="header__line">Часы работы</div>
-                <div class="header__line">с 9:30 до 18:00</div>
+                <div class="header__line" itemprop="openingHoursSpecification">с 9:30 до 18:00</div>
               </div>
               <div class="header__links-wrapper">
-                <a class="header__link header__link--tel" href="tel:+78123350511" target="_blank">+7 (812) 335-05-11</a>
-                <a class="header__link header__link--email" href="mailto:info@intergost.ru" target="_blank">info@intergost.ru</a>
+                <a class="header__link header__link--tel" href="tel:+78123350511" target="_blank" itemprop="telephone">+7 (812) 335-05-11</a>
+                <a class="header__link header__link--email" href="mailto:info@intergost.ru" target="_blank" itemprop="email">info@intergost.ru</a>
               </div>
             </div>
             <div class="header__block header__block--btn">
@@ -205,38 +205,38 @@
           <div class="reviews__inner container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="reviews__articles">
-              <article class="review">
-                <div class="review__text">
+              <article class="review" itemscope itemtype="http://schema.org/Review">
+                <div class="review__text" itemprop="citation">
                   <p>000 «Атлантида», в лице Ф.В.Ефимова, выражает свою благодарность ЦС «Интергост» за качественную, добросовестную и оперативную работу по подготовке документов по договору поручительства для нашей организации. Гибкий подход и ответственность,
                     a так же профессионализм сотрудников и их индивидуальный подход к решению.</p>
                 </div>
-                <div class="review__author">
+                <div class="review__author" itemprop="author">
                   <p>ООО НТКФ "СИ-НОРД"</p>
                 </div>
               </article>
-              <article class="review">
-                <div class="review__text">
+              <article class="review" itemscope itemtype="http://schema.org/Review">
+                <div class="review__text" itemprop="citation">
                   <p>Хочу поблагодарить компанию Интергост и, в частности, менеджера Дарью Солареву за оперативность в подготовке разрешительных документов. Работа менеджера была проведена на высшем уровне. Недопонимания не возникло. Рекомендую всем сотрудничать
                     с этой надежной компанией. Успеха и процветания! </p>
                 </div>
-                <div class="review__author">
+                <div class="review__author" itemprop="author">
                   <p>ЗАО «Перспектива»</p>
                 </div>
               </article>
-              <article class="review">
-                <div class="review__text">
+              <article class="review" itemscope itemtype="http://schema.org/Review">
+                <div class="review__text" itemprop="citation">
                   <p>Из всех организаций, в которые я обращался за консультацией, именно здесь мне смогли дать толковый ответ, предельно доступно все объяснить!</p>
                 </div>
-                <div class="review__author">
+                <div class="review__author" itemprop="author">
                   <p>ООО "Заря" </p>
                 </div>
               </article>
-              <article class="review">
-                <div class="review__text">
+              <article class="review" itemscope itemtype="http://schema.org/Review">
+                <div class="review__text" itemprop="citation">
                   <p>Хочу поблагодарить компанию Интергост и, в частности, менеджера Дарью Солареву за оперативность в подготовке разрешительных документов. Работа менеджера была проведена на высшем уровне. Недопонимания не возникло. Рекомендую всем сотрудничать
                     с этой надежной компанией. Успеха и процветания! </p>
                 </div>
-                <div class="review__author">
+                <div class="review__author" itemprop="author">
                   <p>ЗАО «Перспектива»</p>
                 </div>
               </article>
@@ -319,24 +319,24 @@
           <a class="clients__more" href="#">Смотреть всех клиентов</a>
         </section>
         <!-- Questions section-->
-        <section class="questions-section">
+        <section class="questions-section" itemscope itemtype="http://schema.org/Service">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-lg-8">
                 <div class="questions-section__specialist">
                   <div class="questions-section__bg"></div>
-                  <h2 class="questions-section__title">
+                  <h2 class="questions-section__title" itemprop="offers">
                     <p>У вас есть вопросы? </p>
                     <p>Обратитесь к нашим специалистам</p>
                   </h2>
-                  <p class="questions-section__text">Пояснительный текст о том, что произойдет после заполнения данной формы. Пояснительный текст о том, что произойдет после заполнения данной формы</p>
-                  <div class="specialist">
+                  <p class="questions-section__text" itemprop="description">Пояснительный текст о том, что произойдет после заполнения данной формы. Пояснительный текст о том, что произойдет после заполнения данной формы</p>
+                  <div class="specialist" itemscope itemtype="http://schema.org/Person">
                     <div class="specialist__img">
-                      <img src="img/photo-specialist.jpg" alt="specialist" title="specialist">
+                      <img src="img/photo-specialist.jpg" alt="specialist" title="specialist" itemprop="image">
                     </div>
                     <div class="specialist__info">
-                      <div class="specialist__name">Николаева Татьяна</div>
-                      <a class="specialist__link specialist__link--tel" href="tel:+78881112233" target="_blank">+7 (888) 999-44-66</a>
+                      <div class="specialist__name" itemprop="name">Николаева Татьяна</div>
+                      <a class="specialist__link specialist__link--tel" href="tel:+78881112233" target="_blank" itemprop="telephone">+7 (888) 999-44-66</a>
                       <a class="specialist__link specialist__link--skype" href="skype:guzelamanova" target="_blank">guzelamanova</a>
                       <a class="specialist__link specialist__link--icq" href="http://www.icq.com/whitepages/cmd.php?uin=555666777&amp;amp;action=message" target="_blank">555-666-777</a>
                     </div>
@@ -414,8 +414,8 @@
       <div class="footer__inner container">
         <div class="footer__logo">
           <!-- Logo-->
-          <a class="logo" href="index.html">
-            <img src="img/logo-footer.png" alt="logo" title="logo">
+          <a class="logo" href="index.html" itemscope="itemscope" itemtype="http://schema.org/Brand">
+            <img src="img/logo-footer.png" alt="logo" title="logo" itemprop="logo">
           </a>
           <p class="footer__years">1998-2016 гг</p>
         </div>
