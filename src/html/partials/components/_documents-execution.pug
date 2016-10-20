@@ -1,23 +1,23 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.documents-execution
++b.SECTION.documents-execution(itemscope, itemtype="http://schema.org/Service")
   .container
     .row
       .col-xs-12.col-lg-6
         +e.specialist
-          +e.H2.title Не нашли нужный вам документ? Обратитесь к нашим специалистам
-          +b.manager
+          +e.H2.title(itemprop="offers") Не нашли нужный вам документ? Обратитесь к нашим специалистам
+          +b.manager(itemscope, itemtype="http://schema.org/Person")
             +e.wrapper
               +e.img
-                img(src="img/photo-manager.jpg", alt="manager", title="manager")
-              +e.name Гузель Аманова
+                img(src="img/photo-manager.jpg", alt="manager", title="manager", itemprop="image")
+              +e.name(itemprop="name") Гузель Аманова
             +e.info
-              +e.link--tel(href="tel:+78881112233", target="_blank") +7 (888) 999-44-66
+              +e.link--tel(href="tel:+78881112233", target="_blank", itemprop="telephone") +7 (888) 999-44-66
               +e.link--skype(href="skype:guzelamanova", target="_blank") guzelamanova
               +e.link--icq(href="http://www.icq.com/whitepages/cmd.php?uin=555666777&action=message", target="_blank") 555-666-777
               +b.A.btn--pale(href="#") Написать сообщение
       .col-xs-12.col-lg-5.offset-lg-1
-        +b.self-execution
-          +e.H3.title Хотите оформить документы самостоятельно?
-          +b.A.btn--pale(href="#") Здесь мы расскажем как это сделать
+        +b.self-execution(itemscope, itemtype="http://schema.org/Service")
+          +e.H3.title(itemprop="offers") Хотите оформить документы самостоятельно?
+          +b.A.btn--pale(href="page.html") Здесь мы расскажем как это сделать
 

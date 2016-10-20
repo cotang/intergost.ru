@@ -3,15 +3,15 @@ extends partials/templates/_template.pug
 block content
   +b.SECTION.page--article
     // Content
-    +b.SECTION.content
+    +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
       .container
         .row
           .col-xs-12.col-lg-8.push-lg-3.offset-lg-1            
-            +e.H1.title Сертификат соответствия требованиям Таможенного Союза
+            +e.H1.title(itemprop="headline") Сертификат соответствия требованиям Таможенного Союза
             +e.download 
               a(target="_blank" href="#") Скачать статью
             +e.wrapper
-              +e.text
+              +e.text(itemprop="articleBody")
                 h2 Заголовок второго уровня
                 p Тiet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron
                 ul
@@ -55,20 +55,20 @@ block content
               +e.H2.title 
                 a(href="page-reviews.html") Отзывы
               +e.gallery
-                +b.ARTICLE.review-slide
-                  +e.text
+                +b.ARTICLE.review-slide(itemscope, itemtype="http://schema.org/Review")
+                  +e.text(itemprop="citation")
                     p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
-                  +e.author
+                  +e.author(itemprop="author")
                     p ООО НТКФ "СИ-НОРД"
-                +b.ARTICLE.review-slide
-                  +e.text
+                +b.ARTICLE.review-slide(itemscope, itemtype="http://schema.org/Review")
+                  +e.text(itemprop="citation")
                     p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
-                  +e.author
+                  +e.author(itemprop="author")
                     p ООО НТКФ "СИ-НОРД"
-                +b.ARTICLE.review-slide
-                  +e.text
+                +b.ARTICLE.review-slide(itemscope, itemtype="http://schema.org/Review")
+                  +e.text(itemprop="citation")
                     p Замечательная работа профессионалов. Оформили документы быстро и грамотно. Оперативно доставили документы с оригинальной печатью к нам в офис, что особенно ценно! Отдельное Спасибо Ирине за консультации и приятное общение! 
-                  +e.author
+                  +e.author(itemprop="author")
                     p ООО НТКФ "СИ-НОРД"
 
           .col-xs-12.col-lg-7.offset-lg-1

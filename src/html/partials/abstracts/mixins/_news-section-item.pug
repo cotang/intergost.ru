@@ -1,9 +1,9 @@
 mixin newsSectionItem(heading, date, img, alt)
-  +b.ARTICLE.news-section-item
+  +b.ARTICLE.news-section-item(itemscope, itemtype="http://schema.org/Article")
     +e.img
-      img(src= "img/news/" + img alt= alt title= alt)
+      img(src= "img/news/" + img alt= alt title= alt itemprop="image")
     +e.wrapper
       +e.H3.heading
-        a(href="single-news.html") #{heading}
-      +b.date #{date} 
+        a(href="single-news.html", itemprop="headline") #{heading}
+      +b.date(itemprop="datePublished") #{date} 
        

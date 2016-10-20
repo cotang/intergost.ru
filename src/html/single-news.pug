@@ -36,14 +36,15 @@ block content
                   +e.slash /
                   +e.item 
                     +e.link(href="#") Название темы
-      +b.SECTION.content
+
+      +b.SECTION.content(itemscope, itemtype="http://schema.org/Article")
         .container
           .row
             .col-xs-12.col-lg-8.push-lg-4
               +e.wrapper
-                +e.H1.title Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
-                +b.date 11 июня, 2015
-                +e.text
+                +e.H1.title(itemprop="headline") Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
+                +b.date(itemprop="datePublished") 11 июня, 2015
+                +e.text(itemprop="articleBody")
                   p Тiet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron
                   ul
                     li Het standaard stuk van Lorum Ipsum wat sinds de 16e
@@ -59,7 +60,7 @@ block content
 
             .col-xs-12.col-lg-4.pull-lg-8
               +e.img
-                img(src="img/news/news1.jpg", alt="news1", title="news2")
+                img(src="img/news/news1.jpg", alt="news1", title="news2", itemprop="image")
               +b.other-news
                 +e.H3.title Другие новости
                 +newsSectionItem("Оборот табачных изделий будет регулироваться новым стандартом", "11 июня, 2015", "news2.jpg", "news2")

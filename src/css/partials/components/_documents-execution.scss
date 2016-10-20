@@ -1,9 +1,33 @@
 .documents-execution{
-  background-image: url(../img/bg1.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
   margin-bottom: 140px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: -moz-linear-gradient( 59deg, rgba(54,107,166, .89) 0%, rgba(54,88,166, .89) 38%, rgba(54,107,166, .89) 100%);  
+    background-image: -webkit-linear-gradient( 59deg, rgba(54,107,166, .89) 0%, rgba(54,88,166, .89) 38%, rgba(54,107,166, .89) 100%);  
+    background-image: -ms-linear-gradient( 59deg, rgba(54,107,166, .89) 0%, rgba(54,88,166, .89) 38%, rgba(54,107,166, .89) 100%);  
+    background-image: linear-gradient( 59deg, rgba(54,107,166, .89) 0%, rgba(54,88,166, .89) 38%, rgba(54,107,166, .89) 100%);  
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+  }
+
   @include mq($from:xs, $until:lg){
     margin-bottom: 60px;
   }

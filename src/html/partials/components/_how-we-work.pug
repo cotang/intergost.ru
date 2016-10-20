@@ -1,6 +1,6 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.how-we-work
++b.SECTION.how-we-work(itemscope, itemtype="http://schema.org/Service")
   +e.H2.title Как мы работаем
   +e.inner
     +e.UL.list.container
@@ -9,22 +9,22 @@ include ../abstracts/bemto/bemto.pug
           span 1
         +e.content
           +e.icon
-            span +7 (812) 335-05-11
-          +e.text Позвоните нам и получите консультацию клиента
+            span(itemprop="telephone") +7 (812) 335-05-11
+          +e.text(itemprop="offers") Позвоните нам и получите консультацию клиента
         +e.arrow
       +e.item--grey
         +e.number 
           span 2
         +e.content
           +e.icon
-          +e.text Отправьте документы
+          +e.text(itemprop="offers") Отправьте документы
         +e.arrow
       +e.item--blue
         +e.number 
           span 3
         +e.content
           +e.icon
-          +e.text Получите документы курьером
+          +e.text(itemprop="offers") Получите документы курьером
 
 
 

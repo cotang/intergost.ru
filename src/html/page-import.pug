@@ -17,11 +17,11 @@ block content
               include partials/components/_form--application.pug  
 
     // Import
-    +b.SECTION.import
+    +b.SECTION.import(itemscope, itemtype="http://schema.org/Service")
       .container
         .row
           .col-xs-12.col-lg-3
-            +e.H2.title Импорт
+            +e.H2.title(itemprop="serviceType") Импорт
           .col-xs-12.col-lg-9
             +e.content
               +b.strategy     

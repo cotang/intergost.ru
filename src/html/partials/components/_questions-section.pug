@@ -1,21 +1,21 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.questions-section
++b.SECTION.questions-section(itemscope, itemtype="http://schema.org/Service")
   .container
     .row
       .col-xs-12.col-lg-8
         +e.specialist
           +e.bg
-          +e.H2.title 
+          +e.H2.title(itemprop="offers")
             p У вас есть вопросы? 
             p Обратитесь к нашим специалистам
-          +e.P.text Пояснительный текст о том, что произойдет после заполнения данной формы. Пояснительный текст о том, что произойдет после заполнения данной формы
-          +b.specialist
+          +e.P.text(itemprop="description") Пояснительный текст о том, что произойдет после заполнения данной формы. Пояснительный текст о том, что произойдет после заполнения данной формы
+          +b.specialist(itemscope, itemtype="http://schema.org/Person")
             +e.img
-              img(src="img/photo-specialist.jpg", alt="specialist", title="specialist")
+              img(src="img/photo-specialist.jpg", alt="specialist", title="specialist", itemprop="image")
             +e.info
-              +e.name Николаева Татьяна
-              +e.link--tel(href="tel:+78881112233", target="_blank") +7 (888) 999-44-66
+              +e.name(itemprop="name") Николаева Татьяна
+              +e.link--tel(href="tel:+78881112233", target="_blank", itemprop="telephone") +7 (888) 999-44-66
               +e.link--skype(href="skype:guzelamanova", target="_blank") guzelamanova
               +e.link--icq(href="http://www.icq.com/whitepages/cmd.php?uin=555666777&action=message", target="_blank") 555-666-777
       .col-xs-12.col-lg-4

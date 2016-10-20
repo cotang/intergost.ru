@@ -31,7 +31,7 @@
     top: 25px;
     right: 100px;
     height: 580px;
-    width: 1500px;
+    width: 1200px;
     transform: skewX(-20deg);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5); 
     overflow: hidden;
@@ -60,10 +60,10 @@
       height: 100%;
       top: 0;
       right: -110px;
-      background-image: url(../img/bg2.jpg);
+      background-image: url(../img/bg4.jpg);
       background-repeat: no-repeat;
-      background-position: 100% 0;
-      background-size: contain; 
+      background-position: 100% 50%;
+      background-size: 100% 100%; 
       transform: skewX(20deg); 
       z-index: -1;      
     }

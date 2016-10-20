@@ -6,14 +6,14 @@ include ../abstracts/bemto/bemto.pug
   .row
     .col-xs-12.col-lg-5
       +e.inner
-        +b.news-general
+        +b.news-general(itemscope, itemtype="http://schema.org/Article")
           +e.img
-            img(src="img/news/news1.jpg", alt="news1", title="news2")
+            img(src="img/news/news1.jpg", alt="news1", title="news2", itemprop="image")
           +e.wrapper
             +e.H3.title
-              a(href="single-news.html") Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
-            +b.date 11 июня, 2015
-            +e.text О взаимодействии всех органов, которые осуществляют надзор за соблюдением СФС-мер в рамках ЕАЭС, шла речь на профильном совещании 14 апреля. В нем приняли участие представители от сран-участниц ЕАЭС, эксперты и другие ....
+              a(href="single-news.html", itemprop="headline") Эксперты внесли предложения в порядок совместной работы органов ветеринарии внутри ЕАЭС
+            +b.date(itemprop="datePublished") 11 июня, 2015
+            +e.text(itemprop="articleBody") О взаимодействии всех органов, которые осуществляют надзор за соблюдением СФС-мер в рамках ЕАЭС, шла речь на профильном совещании 14 апреля. В нем приняли участие представители от сран-участниц ЕАЭС, эксперты и другие ....
     .col-xs-12.col-lg-6.offset-lg-1
       +e.other-news
         +newsSectionItem("Оборот табачных изделий будет регулироваться новым стандартом", "11 июня, 2015", "news2.jpg", "news2")

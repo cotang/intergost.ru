@@ -5,8 +5,8 @@ include ../abstracts/bemto/bemto.pug
   +e.inner.container
     +e.logo
       // Logo
-      +b.A.logo(href="index.html")       
-        img(src="img/logo-footer.png", alt="logo", title="logo")
+      +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
+        img(src="img/logo-footer.png", alt="logo", title="logo", itemprop="logo")
       +e.P.years 1998-2016 гг
     +e.wrapper
       +e.tel

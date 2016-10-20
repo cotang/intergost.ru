@@ -23,9 +23,9 @@
   &__bg{
     position: absolute;
     top: -30px;
-    right: 60px;
+    right: 120px;
     height: 500px;
-    width: 1500px;
+    width: 1200px;
     transform: skewX(-20deg);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5); 
     overflow: hidden;
@@ -46,9 +46,9 @@
       height: 100%;
       top: 0;
       right: -100px;
-      background-image: -moz-linear-gradient( -39deg, rgba(94,149,212, .42) 0%, rgba(54,107,166, .42) 100%);
-      background-image: -webkit-linear-gradient( -39deg, rgba(94,149,212, .42) 0%, rgba(54,107,166, .42) 100%);
-      background-image: -ms-linear-gradient( -39deg, rgba(94,149,212, .42) 0%, rgba(54,107,166, .42) 100%);
+      background-image: -moz-linear-gradient( -39deg, rgba(54,88,166, .91) 0%, rgba(54,107,166, .91) 38%, rgba(75,152,206, .91) 72%, rgba(45,131,227, .91) 100%);
+      background-image: -webkit-linear-gradient( -39deg, rgba(54,88,166, .91) 0%, rgba(54,107,166, .91) 38%, rgba(75,152,206, .91) 72%, rgba(45,131,227, .91) 100%);
+      background-image: -ms-linear-gradient( -39deg, rgba(54,88,166, .91) 0%, rgba(54,107,166, .91) 38%, rgba(75,152,206, .91) 72%, rgba(45,131,227, .91) 100%);
       background-image: linear-gradient( -39deg, rgba(54,88,166, .91) 0%, rgba(54,107,166, .91) 38%, rgba(75,152,206, .91) 72%, rgba(45,131,227, .91) 100%);  
       transform: skewX(20deg);
       z-index: 0;      
@@ -60,10 +60,10 @@
       height: 100%;
       top: 0;
       right: -100px;
-      background-image: url(../img/bg2.jpg);
+      background-image: url(../img/bg4.jpg);
       background-repeat: no-repeat;
-      background-position: 100% 0;
-      background-size: contain; 
+      background-position: 100% 50%;
+      background-size: 100% 100%; 
       transform: skewX(20deg); 
       z-index: -1;      
     }

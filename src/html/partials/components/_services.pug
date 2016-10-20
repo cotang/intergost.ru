@@ -1,71 +1,76 @@
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.services.container
++b.SECTION.services.container(itemscope, itemtype="http://schema.org/Service")
   +e.H2.title Услуги
   .row
     +e.item.col-xs-12.col-md-6.col-lg-4
-      +e.A.link(href="page.html") Оформление по российским законам
+      +e.A.link(href="page.html", itemprop="serviceType") Оформление по российским законам
       +b.UL.dropdown-services
         +e.item 
-          +e.A.link(href="page.html") Сертификаты и декларации ГОСТ Р
+          +e.A.link(href="page.html", itemprop="offers") Сертификаты и декларации ГОСТ Р
         +e.item 
-          +e.A.link(href="page.html") Отказные письма (обычные и ВНИИС)
+          +e.A.link(href="page.html", itemprop="offers") Отказные письма (обычные и ВНИИС)
         +e.item 
-          +e.A.link(href="page.html") Пожарные сертификаты и декларации
+          +e.A.link(href="page.html", itemprop="offers") Пожарные сертификаты и декларации
         +e.item
-          +e.A.link(href="page.html") Технические условия (разработка и регистрация) 
+          +e.A.link(href="page.html", itemprop="offers") Технические условия (разработка и регистрация) 
         +e.item 
-          +e.A.link(href="page.html") Санитарно-эпидемиологические заключения 
+          +e.A.link(href="page.html", itemprop="offers") Санитарно-эпидемиологические заключения 
         +e.item 
-          +e.A.link(href="page.html") Регистрационные удостоверения  Росздравнадзора
+          +e.A.link(href="page.html", itemprop="offers") Регистрационные удостоверения Росздравнадзора
         +e.item 
-          +e.A.link(href="page.html") Разрешение на применение Ростехнадзора
+          +e.A.link(href="page.html", itemprop="offers") Разрешение на применение Ростехнадзора
         +e.item
-          +e.A.link(href="page.html") Сертификация услуг 
+          +e.A.link(href="page.html", itemprop="offers") Сертификация услуг 
+
     +e.item.col-xs-12.col-md-6.col-lg-4 
-      +e.A.link(href="page.html") Оформление по законам таможенного союза
+      +e.A.link(href="page.html", itemprop="serviceType") Оформление по законам таможенного союза
       +b.UL.dropdown-services
         +e.item 
-          +e.A.link(href="page.html") Сертификаты и декларации ТР ТС
+          +e.A.link(href="page.html", itemprop="offers") Сертификаты и декларации ТР ТС
         +e.item 
-          +e.A.link(href="page.html") Гигиенические заключения (СГР и ЭЗ)
+          +e.A.link(href="page.html", itemprop="offers") Гигиенические заключения (СГР и ЭЗ)
         +e.item 
-          +e.A.link(href="page.html") СБКТС
+          +e.A.link(href="page.html", itemprop="offers") СБКТС
         +e.item
-          +e.A.link(href="page.html") Оотказные письма (обычные и ВНИИС)
+          +e.A.link(href="page.html", itemprop="offers") Отказные письма (обычные и ВНИИС)
         +e.item 
-          +e.A.link(href="page.html") Сертификат промышленной безопасности
+          +e.A.link(href="page.html", itemprop="offers") Сертификат промышленной безопасности
+
     +e.item.col-xs-12.col-md-6.col-lg-4
-      +e.A.link(href="page.html") Прочие документы
+      +e.A.link(href="page.html", itemprop="serviceType") Прочие документы
       +b.UL.dropdown-services
         +e.item 
-          +e.A.link(href="page.html") ИСО и ХАССП
+          +e.A.link(href="page.html", itemprop="offers") ИСО и ХАССП
         +e.item 
-          +e.A.link(href="page.html") Экологические сертификаты
+          +e.A.link(href="page.html", itemprop="offers") Экологические сертификаты
         +e.item 
-          +e.A.link(href="page.html") Присвоение штрих-кодов
+          +e.A.link(href="page.html", itemprop="offers") Присвоение штрих-кодов
         +e.item
-          +e.A.link(href="page.html") Протоколы испытаний
+          +e.A.link(href="page.html", itemprop="offers") Протоколы испытаний
         +e.item 
-          +e.A.link(href="page.html") Поверка приборов
+          +e.A.link(href="page.html", itemprop="offers") Поверка приборов
         +e.item 
-          +e.A.link(href="page.html") Фитосанитарные и ветеринарные сертификаты
+          +e.A.link(href="page.html", itemprop="offers") Фитосанитарные и ветеринарные сертификаты
         +e.item 
-          +e.A.link(href="page.html") Озоновые заключения
+          +e.A.link(href="page.html", itemprop="offers") Озоновые заключения
         +e.item 
-          +e.A.link(href="page.html") Сертификаты СЕ
+          +e.A.link(href="page.html", itemprop="offers") Сертификаты СЕ
+
     +e.item.col-xs-12.col-md-6.col-lg-4
-      +e.A.link(href="page.html") Комплексные предложения
+      +e.A.link(href="page.html", itemprop="serviceType") Комплексные предложения
       +b.UL.dropdown-services
         +e.item 
-          +e.A.link(href="page.html") Пакетное предложение для импортеров
+          +e.A.link(href="page.html", itemprop="offers") Пакетное предложение для импортеров
         +e.item 
-          +e.A.link(href="page.html") Пакетное предложение для экспортеров
+          +e.A.link(href="page.html", itemprop="offers") Пакетное предложение для экспортеров
         +e.item 
-          +e.A.link(href="page.html") Пакетное предложение для производителей РФ
+          +e.A.link(href="page.html", itemprop="offers") Пакетное предложение для производителей РФ
+
     +e.item.col-xs-12.col-md-6.col-lg-4
-      +e.A.link(href="page.html") Сертификация по видам продукции
+      +e.A.link(href="page.html", itemprop="serviceType") Сертификация по видам продукции
+      
     +e.item.col-xs-12.col-md-6.col-lg-4
-      +e.A.link(href="page.html") Таможенные услуги
+      +e.A.link(href="page.html", itemprop="serviceType") Таможенные услуги
 
 
