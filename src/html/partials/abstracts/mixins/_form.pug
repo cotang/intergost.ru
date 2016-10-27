@@ -14,11 +14,11 @@ mixin form(items)
           .form-group.field-email-tel.required
             +e.INPUT.input(type='text', name='Email/телефон', placeholder='Ваш e-mail или телефон*')
             p.help-block.help-block-error Ошибка заполнения поля формы 
-          .form-group.field-production.required
-            +e.INPUT.input(type='text', name='Продукт/услуга', placeholder='Ваш продукт или услуга*') 
+          .form-group.field-production
+            +e.INPUT.input(type='text', name='Продукт/услуга', placeholder='Ваш продукт или услуга') 
             p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-name.required
-            +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
+          .form-group.field-name
+            +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя')
             p.help-block.help-block-error Ошибка заполнения поля формы          
 
         //- if item.question

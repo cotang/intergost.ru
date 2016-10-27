@@ -73,6 +73,12 @@
     }
     .page__reviews-section{
       box-shadow: $box-shadow;
+      padding-top: 15px;
+    }
+  }
+  &--single-news{
+    .content__text{
+      font-family: $font-family--roboto-light;
     }
   }
 }

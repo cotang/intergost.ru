@@ -1,4 +1,5 @@
 .header{
+  background-color: $palest;
   font-size: $font-size-menu;
   &__inner{
     display: flex;
@@ -9,7 +10,7 @@
     padding-top: 35px;
     flex: 0 0 25%;
     max-width: 25%;
-    padding-right: 15px;
+    // padding-right: 15px;
     @include mq($from:xs, $until:xl){
       flex: 0 0 100%;
       max-width: 100%;

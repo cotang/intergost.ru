@@ -31,7 +31,7 @@
     top: 25px;
     right: 100px;
     height: 580px;
-    width: 1200px;
+    width: 1300px;
     transform: skewX(-20deg);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5); 
     overflow: hidden;
@@ -69,17 +69,20 @@
     }
   }
   &__wrapper{
-    position: relative;
+    position: absolute;
+    top: 50%; /* если не считается calc */
+    top: calc(25px + 50%);
+    transform: translateY(-50%);
     z-index: 1;
     font-family: $font-family;
-    padding-right: 25%;
+    padding-right: 20%;
     @include mq($from:xs, $until:lg){
       text-align: center;
       padding-right: 0;
     }
   }
   &__title{
-    margin: 180px 0 0;
+    margin: 0;
     line-height: $line-height-normal;
     text-transform: uppercase;
     color: $text-color-white;
@@ -104,6 +107,7 @@
     font-family: $font-family-light; 
     font-size: $font-size-promo;
     color: $text-color-white;
+    line-height: $line-height-normal;
     // padding-right: 150px;
     @include mq($from:xs, $until:lg){
       padding-right: 0;

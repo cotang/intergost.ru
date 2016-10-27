@@ -63,21 +63,21 @@
     }
   }
 
-
-
-  h1, h2, h3, h4, h5, h6{
-    text-transform: uppercase;
-    font-family: $font-family-bold;
-    font-weight: normal;
-  }
-  h2{
-    font-size: $font-size-list;
-  }
-  h3{
-    font-size: $font-size-bigger;
-  }
-  h4, h5, h6{
-    font-size: $font-size;
+  &__text{
+    h2, h3, h4, h5, h6{
+      text-transform: uppercase;
+      font-family: $font-family-extrabold;
+      font-weight: normal;
+    }
+    h2{
+      font-size: $font-size-list;
+    }
+    h3{
+      font-size: $font-size-bigger;
+    }
+    h4, h5, h6{
+      font-size: $font-size;
+    }    
   }
 }
 

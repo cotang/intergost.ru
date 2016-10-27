@@ -34,7 +34,7 @@
     }    
   }
   &__item{
-    padding: 0 15px;
+    padding: 0 15px 10px;
     @include mq($from:xs, $until:sm){
       flex: 0 0 100%;
       max-width: 100%;
