@@ -31,10 +31,13 @@ include ../abstracts/bemto/bemto.pug
         +e.UL.list
           +e.item 
             +e.A.link(href="page-services.html") Услуги
-          +e.item 
-            +e.A.link(href="page-about.html") О компании
-          +e.item 
-            +e.A.link(href="page-reviews.html") Отзывы
+          +e.item--dropdown
+            +e.A.link(href="javascript:void(0);") О компании
+            +e.UL.sublist            
+              +e.item 
+                +e.A.link(href="page-about.html") Подробнее о нас
+              +e.item 
+                +e.A.link(href="page-reviews.html") Отзывы
           +e.item
             +e.A.link(href="page-russian.html") Изготовителям РФ
           +e.item

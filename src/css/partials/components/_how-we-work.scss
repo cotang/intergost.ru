@@ -40,10 +40,26 @@
     position: relative;
     padding-top: 100px;
     padding-bottom: 50px;
+    height: 224px; /* убрать? */
+    @include mq($from:xs, $until:xl){
+      height: auto;
+    }  
     @include mq($from:xs, $until:md){
       flex: 0 0 100%;
       max-width: 100%;
       padding-top: 80px;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 100px;
+      height: 100%; 
+      @include mq($from:xs, $until:xl){
+        display: none;
+      }      
     }
 
     &--white{
@@ -58,6 +74,16 @@
       .how-we-work__arrow{
         z-index: 3;
         border-left: 100px solid $white;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100px;
+          height: 224px;
+          background-color: $white;
+          transform: translate(-100%, -50%);
+        }
       }
       .how-we-work__number{
         background-color: $grey;
@@ -66,7 +92,6 @@
         @include sprite($s-work-tel); 
       }
       .how-we-work__content{
-        position: relative;
         z-index: 4;
       }
     }
@@ -78,15 +103,29 @@
         padding-left: 50px;
         padding-right: 50px;
       }
+
+      &:before{
+        background-color: $grey;    
+      }
+
       .how-we-work__arrow{
         z-index: 1;
         border-left: 100px solid $grey;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100px;
+          height: 224px;
+          background-color: $grey;
+          transform: translate(-100%, -50%);
+        } 
       }
       .how-we-work__icon{
         @include sprite($s-work-mail); 
       }
       .how-we-work__content{
-        position: relative;
         z-index: 2;
       }
     }
@@ -101,6 +140,10 @@
         padding-left: 50px;
         padding-right: 50px;
       }
+
+      &:before{
+        background-color: $blue;    
+      }      
 
       .how-we-work__icon{
         @include sprite($s-work-plane); 
