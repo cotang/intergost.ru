@@ -1662,7 +1662,7 @@ img {
   padding-left: 33px;
   list-style-type: none; }
   .dropdown-services__link {
-    font-family: "Raleway Regular", Roboto, Helvetica, Arial, sans-serif; }
+    font-family: "Roboto Light", Helvetica, Arial, sans-serif; }
     .dropdown-services__link:hover, .dropdown-services__link:focus {
       color: #000000;
       text-decoration: underline; }
@@ -1897,7 +1897,7 @@ img {
     font-size: 24px; }
   .our-approach__text {
     color: #ffffff;
-    font-family: "Raleway Light", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Roboto Light", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 18px;
     margin-bottom: 60px;
