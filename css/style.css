@@ -1487,6 +1487,10 @@ img {
     font-size: 20px;
     color: #ffffff;
     line-height: 1.43; }
+  .promo__flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 .promo-facts {
   margin-top: 135px;
@@ -1512,7 +1516,7 @@ img {
   background-color: #f9f9f9;
   color: #000000;
   margin-top: 30px;
-  height: 100%;
+  margin-bottom: -30px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
   position: relative;
   padding-right: 10%; }
@@ -2955,7 +2959,8 @@ img {
   .strategy__text p {
     margin: 0; }
   .strategy__text .bold {
-    font-family: "Roboto Bold", Helvetica, Arial, sans-serif; }
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
 
 .strategy__buttons-wrapper {
   margin-left: 110px;
@@ -3066,8 +3071,7 @@ img {
     margin: 0;
     list-style-type: none; }
   .additional__item {
-    font-family: "Roboto Bold", Helvetica, Arial, sans-serif;
-    font-weight: bold;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     margin-bottom: 15px; }
     .additional__item:before {
       content: '';
