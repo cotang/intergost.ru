@@ -87,6 +87,7 @@
       }
       .how-we-work__number{
         background-color: $grey;
+        z-index: 4;
       }
       .how-we-work__icon{
         @include sprite($s-work-tel); 
@@ -167,6 +168,7 @@
   }
   &__number{
     position: absolute;
+    z-index: 2;
     left: 50%;
     top: 0;
     transform: translate(-50%, -50%)  rotate(45deg);
