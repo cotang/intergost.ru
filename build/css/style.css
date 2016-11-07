@@ -1972,7 +1972,8 @@ img {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.22);
   text-align: center;
   padding: 140px 10px 60px;
-  height: 100%; }
+  height: 100%;
+  min-height: 280px; }
 
 .advantages-blocks__text {
   font-family: "Raleway Light", Roboto, Helvetica, Arial, sans-serif;
@@ -4453,7 +4454,8 @@ img {
   .advantages-blocks__block{
     padding-top: 80px;
     padding-bottom: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    min-height: 170px; }
   .clients-section__page-link{
     margin: 0 20px 20px; }
   .how-we-work__inner:after{
@@ -4467,6 +4469,8 @@ img {
   .reviews-section__gallery{
     margin: 0;
     padding: 0 20px; }
+  .questions-section__bg{
+    display: none; }
   .questions-section__text{
     padding-right: 0; }
   .contacts-section__title{
@@ -4531,6 +4535,8 @@ img {
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%; }
+  .advantages-blocks__block{
+    min-height: 260px; }
   .reviews-section__gallery{
     margin: 0 100px;
     padding: 0 50px; }
@@ -4594,8 +4600,6 @@ img {
     font-size: 15px; }
   .clients-section__slide{
     padding: 0; }
-  .questions-section__bg{
-    display: none; }
   .specialist__img{
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -4778,10 +4782,8 @@ img {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
-  .questions-section__bg{
-    right: 0;
-    height: 550px;
-    right: -200px; }
+  .advantages-blocks__block{
+    min-height: 210px; }
   .clients__item{
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -4791,4 +4793,6 @@ img {
     display: none; } }
   @media (min-width: 64em) and (max-width: 79.99em){
   .manager__info{
-    margin-left: 0; } }
+    margin-left: 0; }
+  .advantages-blocks__block{
+    min-height: 310px; } }

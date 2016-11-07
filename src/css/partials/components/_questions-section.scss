@@ -30,13 +30,7 @@
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5); 
     overflow: hidden;
     z-index: -1;
-
-    @include mq($from:sm, $until:md){
-      right: 0;
-      height: 550px;
-      right: -200px;
-    }
-    @include mq($from:xs, $until:sm){
+    @include mq($from:xs, $until:md){
       display: none;
     }
     &:before{

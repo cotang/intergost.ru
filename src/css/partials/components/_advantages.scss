@@ -74,10 +74,21 @@
     text-align: center;
     padding: 140px 10px 60px;
     height: 100%;
+    min-height: 280px;
+    @include mq($from:lg, $until:xl){
+      min-height: 310px;
+    }
+    @include mq($from:md, $until:lg){
+      min-height: 260px;
+    } 
+    @include mq($from:sm, $until:md){
+      min-height: 210px;
+    }
     @include mq($from:xs, $until:md){
       padding-top: 80px;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      min-height: 170px;
     }     
   }
   &__text{
