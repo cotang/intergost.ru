@@ -1,7 +1,7 @@
 .advantages{
-  margin-top: 70px;
+  margin-top: 80px;
   &__title{
-    margin: 0 0 50px;
+    margin: 0 0 60px;
     text-align: center;
     text-transform: uppercase;
     font-family: $font-family-extrabold;
@@ -46,7 +46,10 @@
     font-size: $font-size-title;
   }
   &__item{
-    margin-bottom: 30px;
+    @include mq($from:xs, $until:lg){
+      margin-bottom: 30px;
+    }
+    
     &:nth-of-type(1){
       .advantages-blocks__text:before{
         @include sprite($s-approach-block-manager);
@@ -129,15 +132,15 @@
 }
 
 .advantages-customs{
-  padding-top: 190px;
-  padding-bottom: 40px;
+  padding-top: 200px;
+  padding-bottom: 60px;
   background-color: $blue;
   @include mq($from:xs, $until:lg){
     padding-top: 140px;
   }
 
   &__title{
-    margin: 0 0 50px;
+    margin: 0 0 60px;
     text-align: center;
     color: $text-color-white;
     text-transform: uppercase;

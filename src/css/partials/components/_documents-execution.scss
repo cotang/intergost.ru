@@ -1,6 +1,9 @@
 .documents-execution{
-  margin-bottom: 140px;
+  // margin-bottom: 80px;
+  border-top: 50px solid white; /* выравнивание расстояния между блоками, прихоть дизайнера */
+  border-bottom: 70px solid white; /* выравнивание расстояния между блоками, прихоть дизайнера */
   position: relative;
+
   &:before{
     content: '';
     position: absolute;
@@ -35,7 +38,7 @@
   &__specialist{
     background-color: $white;
     box-shadow: $box-shadow;
-    margin-top: -40px;
+    margin-top: -50px;
     margin-bottom: -70px;
     padding: 30px 50px 30px 60px;
     @include mq($from:xs, $until:sm){

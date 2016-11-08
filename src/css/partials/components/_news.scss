@@ -1,6 +1,7 @@
 .news{
+  margin-top: 80px;
   &__title{
-    margin: 25px 0 30px;
+    margin: 0 0 60px;
     font-family: $font-family-extrabold;
     font-weight: normal;
     font-size: $font-size-title;
@@ -39,6 +40,7 @@
     text-transform: uppercase;    
   }
   &__text{
+    font-family: $font-family--roboto-light;
     font-size: $font-size-menu;
   }
 

@@ -23,7 +23,7 @@
   }
   &__list{
     padding-left: 0;
-    margin: 50px 0 40px;
+    margin: 50px 0 0;
     list-style-type: none;
   }
   &__item{
@@ -35,7 +35,8 @@
     }
   }
   &__ask{
-    font-family: $font-family-bold;
+    font-family: $font-family--roboto-bold;
+    font-weight: bold;
     font-size: $font-size-promo;
     position: relative;
     z-index: 1;
@@ -55,7 +56,7 @@
     }
   }
   &__answer{
-    font-family: $font-family;
+    font-family: $font-family--roboto-light;
     position: relative;
     z-index: 2;
     padding: 20px 20px 30px 100px;

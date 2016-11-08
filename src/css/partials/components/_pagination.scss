@@ -2,7 +2,7 @@
   text-align: center;
   color: $text-color;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   @include mq($from:xs, $until:lg){
     margin: 10px 0;
   }

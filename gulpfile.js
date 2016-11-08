@@ -124,6 +124,10 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
   return gulp.src(path.src.js)
 //    .pipe(gulpif(devBuild, sourcemaps.init()))
+    .pipe(plumber(function(error) {
+        gutil.log(gutil.colors.red(error.message));
+        this.emit('end');
+    }))
     .pipe(concat('script.min.js'))
     .pipe(uglify())
 //    .pipe(gulpif(devBuild, sourcemaps.write()))

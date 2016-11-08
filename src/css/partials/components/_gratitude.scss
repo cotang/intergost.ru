@@ -1,10 +1,7 @@
 .gratitude{
   margin-top: 30px;
   text-align: center;
-  // &__text{
-  //   padding: 0 220px;
-  //   margin-bottom: 55px;
-  // }
+
   &__gallery{
     background-color: $pale;
     margin-bottom: 20px;
@@ -36,6 +33,9 @@
     z-index: 3;    
     &:hover, &:focus {
       transform: scale(1.0);
+      // .gratitude__text{
+      //   display: none;
+      // }
     }
   }
   &__img{

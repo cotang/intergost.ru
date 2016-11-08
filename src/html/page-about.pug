@@ -5,8 +5,8 @@ block content
     // Promo -- about
     +b.SECTION.promo(itemscope, itemtype="http://schema.org/AboutPage")
       .container
-        .row.row-s-stretch
-          .col-xs-12.col-lg-7
+        .row.row-xs-stretch
+          +e.flex.col-xs-12.col-lg-7
             +b.about
               +e.H1.title(itemprop="name") О компании 
               +e.text(itemprop="mainContentOfPage")

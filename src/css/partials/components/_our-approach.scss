@@ -5,7 +5,7 @@
   }  
 
   &__inner{
-    padding-bottom: 150px;
+    padding-bottom: 170px;
     background-color: $blue;
   }
   &__title{
@@ -27,7 +27,7 @@
   }
   &__text{
     color: $text-color-white;
-    font-family: $font-family-light;
+    font-family: $font-family--roboto-light;
     font-weight: normal;
     font-size: $font-size-list;
     margin-bottom: 60px;
@@ -36,7 +36,7 @@
   }
   &__advantages{
     margin-top: -90px;
-    margin-bottom: -100px;
+    // margin-bottom: -100px;
     flex: 0 0 100%;
     max-width: 100%;    
   }

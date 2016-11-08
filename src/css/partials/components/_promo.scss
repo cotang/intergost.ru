@@ -1,5 +1,6 @@
 .promo{
   background-color: $blue;
+  border-bottom: 25px solid white; /* выравнивание расстояния между блоками, прихоть дизайнера */
 
   &__form{
     margin: 75px 10px;
@@ -85,7 +86,6 @@
   }
   &__title{
     margin: 180px 0 0;
-    // margin: 0;
     line-height: $line-height-normal;
     text-transform: uppercase;
     color: $text-color-white;
@@ -115,6 +115,9 @@
     @include mq($from:xs, $until:lg){
       padding-right: 0;
     }
+  }
+  &__flex{
+    display: flex;
   }
 }
 

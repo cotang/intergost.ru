@@ -36,6 +36,9 @@
       background-color: darken($pale, 10%);
     }
   }
+  &--form{
+    margin: 20px 15px; 
+  }
 
   &--whatsapp{
     box-shadow: none;

@@ -1,6 +1,6 @@
 .clients-section{
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin-top: 80px;
+  // margin-bottom: 45px;
   text-align: center;
 
   &__title{
@@ -31,7 +31,7 @@
   }
   &__text{
     font-size: $font-size-list;
-    font-family: $font-family-light;
-    margin: 0 0 40px;
+    font-family: $font-family--roboto-light;
+    margin: 0 0 50px;
   }
 }

@@ -1,5 +1,5 @@
 .news-section{
-  margin-top: 150px;
+  margin-top: 80px;
   margin-bottom: 0;
   text-align: center;
   &__title{
@@ -54,6 +54,9 @@
         text-decoration: underline;
       }
     }
+  }
+  &__text{
+    font-family: $font-family--roboto-light;
   }
   &__date{
     color: $text-color-grey;

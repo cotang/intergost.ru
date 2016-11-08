@@ -1,12 +1,12 @@
 .glossary{
-  margin-top: -10px;
-  margin-bottom: 100px;
+  // margin-top: -10px;
+  margin-bottom: 80px;
 
   &__title{
     text-align: center;
     text-transform: uppercase;
     font-family: $font-family;
-    margin: 0 0 40px;
+    margin: 0 0 60px;
     font-size: $font-size-title;
     font-family: $font-family-extrabold;
     font-weight: normal;
@@ -54,9 +54,10 @@
     justify-content: space-between;
   }
   &__item{
+    padding: 5px 0;
     flex: 0 0 15%;
     max-width: 15%;
-    min-height: 45px;
+    // min-height: 45px;
     @include mq($from:md, $until:lg){
       flex: 0 0 22%;
       max-width: 22%;

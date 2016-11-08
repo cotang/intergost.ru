@@ -1,6 +1,6 @@
 .content{
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 80px;
+  // margin-bottom: 20px;
 
   @include mq($from:xs, $until:md){
     margin-top: 40px;
@@ -10,7 +10,7 @@
     text-transform: uppercase;
     font-family: $font-family-extrabold;
     font-weight: normal;
-    margin: 20px 0;
+    margin: 0 0 60px;
     font-size: $font-size-title;
   }
 
@@ -64,6 +64,7 @@
   }
 
   &__text{
+    font-family: $font-family--roboto-light;
     h2, h3, h4, h5, h6{
       text-transform: uppercase;
       font-family: $font-family-extrabold;
