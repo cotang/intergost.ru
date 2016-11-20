@@ -8,14 +8,14 @@ include ../abstracts/bemto/bemto.pug
       +b.A.logo(href="index.html", itemscope, itemtype="http://schema.org/Brand")       
         img(src="img/logo-header.png", alt="logo", title="logo", itemprop="logo")
     +e.wrapper
-      +e.info(itemscope, itemtype="http://schema.org/Place")
-        +e.block--contacts
+      +e.info
+        +e.block--contacts(itemscope, itemtype="http://schema.org/ContactPoint")
           +e.address-wrapper(itemprop="address")
             +e.line Санкт-Петербург
             +e.line Лиговский проспект, 11
           +e.time-wrapper 
             +e.line Часы работы
-            +e.line(itemprop="openingHoursSpecification") с 9:30 до 18:00
+            +e.line(itemprop="hoursAvailable") с 9:30 до 18:00
           +e.links-wrapper 
             +e.link--tel(href="tel:+78123350511", target="_blank", itemprop="telephone") +7 (812) 335-05-11
             +e.link--email(href="mailto:info@intergost.ru", target="_blank", itemprop="email") info@intergost.ru

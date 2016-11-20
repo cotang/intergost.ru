@@ -4,6 +4,6 @@ mixin newsSectionItem(heading, date, img, alt)
       img(src= "img/news/" + img alt= alt title= alt itemprop="image")
     +e.wrapper
       +e.H3.heading
-        a(href="single-news.html", itemprop="headline") #{heading}
+        a(href="single-news.html", itemprop="description") #{heading}
       +b.date(itemprop="datePublished") #{date} 
        
