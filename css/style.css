@@ -1731,16 +1731,16 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .glossary-articles__item {
   padding: 5px 0;
-  -webkit-flex: 0 0 15%;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
-  max-width: 15%; }
+  -webkit-flex: 0 0 16.6666%;
+      -ms-flex: 0 0 16.6666%;
+          flex: 0 0 16.6666%;
+  max-width: 16.6666%; }
 
 .glossary-articles__link:hover, .glossary-articles__link:focus {
   text-decoration: underline; }
