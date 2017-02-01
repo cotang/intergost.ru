@@ -147,13 +147,15 @@ jQuery(document).ready(function($){
   $('.glossary__link').on('click', function(e){
     e.preventDefault();
     $(this).closest('.glossary__list').find('.glossary__link--active').removeClass('glossary__link--active');
-    $(this).addClass('glossary__link--active');    
+    $(this).addClass('glossary__link--active');
+    var letter = $(this).text();    
     var articlesList = $(this).closest('.glossary').find('.glossary-articles__list');
-    articlesList.fadeOut();
-    var letter = $(this).text();
-    if (articlesList.data('letter') == letter) {
-      articlesList.fadeIn();
-    }
+    articlesList.each(function(indx, element){
+      $(this).hide();
+      if ($(this).data('letter') == letter) {
+        $(this).fadeIn();
+      }
+    });
   });
 
 
@@ -173,7 +175,7 @@ jQuery(document).ready(function($){
     $(this).find('.gratitude__modal')
       .animate({opacity: 0}, 200,  
         function(){
-          $(this).hide();
+          $(this).remove();
           $('.modal').fadeOut(400);
         }
       );

@@ -128,8 +128,8 @@ gulp.task('js', function() {
         gutil.log(gutil.colors.red(error.message));
         this.emit('end');
     }))
-    .pipe(concat('script.min.js'))
-    .pipe(uglify())
+    .pipe(concat('script.js'))
+    // .pipe(uglify())
 //    .pipe(gulpif(devBuild, sourcemaps.write()))
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
